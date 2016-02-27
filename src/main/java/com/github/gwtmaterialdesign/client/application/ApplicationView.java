@@ -13,19 +13,10 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
-    @UiField
-    SimplePanel main;
-
     @Inject
     ApplicationView(
             Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 
-    @Override
-    public void setInSlot(Object slot, IsWidget content) {
-        if (slot == ApplicationPresenter.SLOT_MAIN) {
-            main.setWidget(content);
-        }
-    }
 }

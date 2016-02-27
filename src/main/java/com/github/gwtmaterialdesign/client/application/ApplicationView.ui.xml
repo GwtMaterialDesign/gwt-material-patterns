@@ -1,11 +1,28 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-        xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+        xmlns:g='urn:import:com.google.gwt.user.client.ui'
+        xmlns:m='urn:import:gwt.material.design.client.ui'>
 
     <ui:with field="res" type="com.github.gwtmaterialdesign.client.resources.AppResources"/>
 
-    <g:HTMLPanel>
-
-        <g:SimplePanel ui:field="main"/>
-        
-    </g:HTMLPanel>
+    <m:MaterialPanel>
+        <m:MaterialHeader layoutPosition="FIXED" width="100%" shadow="1">
+            <m:MaterialNavBar backgroundColor="light-blue" activates="sidenav">
+                <m:MaterialNavBrand text="Patterns +" />
+                <m:MaterialNavSection float="RIGHT">
+                    <m:MaterialIcon iconType="APPS" />
+                    <m:MaterialIcon iconType="NOTIFICATIONS" />
+                    <m:MaterialImage circle="true" width="56px" height="56px" url="http://assets.materialup.com/uploads/c94496fa-9abc-45b7-a2a0-27ea48c2f160/avatar-03.png" backgroundColor="white" />
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <m:MaterialRow backgroundColor="light-blue" marginBottom="0">
+                <m:MaterialColumn offset="l3" grid="l6" backgroundColor="light-blue">
+                    <m:MaterialTab backgroundColor="light-blue">
+                        <m:MaterialTabItem><m:MaterialLink text="FEATURED" textColor="white"/></m:MaterialTabItem>
+                        <m:MaterialTabItem><m:MaterialLink text="FOLLOWING" textColor="white"/></m:MaterialTabItem>
+                        <m:MaterialTabItem><m:MaterialLink text="YOURS" textColor="white"/></m:MaterialTabItem>
+                    </m:MaterialTab>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+        </m:MaterialHeader>
+    </m:MaterialPanel>
 </ui:UiBinder>
