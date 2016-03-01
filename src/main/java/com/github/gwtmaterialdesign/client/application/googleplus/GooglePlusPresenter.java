@@ -1,6 +1,5 @@
-package com.github.gwtmaterialdesign.client.application.home;
+package com.github.gwtmaterialdesign.client.application.googleplus;
 
-import com.github.gwtmaterialdesign.client.application.ApplicationPresenter;
 import com.github.gwtmaterialdesign.client.place.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -10,20 +9,23 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter.MyProxy> {
+public class GooglePlusPresenter extends Presenter<GooglePlusPresenter.MyView, GooglePlusPresenter.MyProxy> {
     interface MyView extends View {
     }
 
+    @NameToken(NameTokens.google_plus)
     @ProxyStandard
-    @NameToken(NameTokens.HOME)
-    interface MyProxy extends ProxyPlace<HomePresenter> {
+    interface MyProxy extends ProxyPlace<GooglePlusPresenter> {
     }
 
+
     @Inject
-    HomePresenter(
+    GooglePlusPresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+        super(eventBus, view, proxy, RevealType.Root);
+
     }
+
 }
