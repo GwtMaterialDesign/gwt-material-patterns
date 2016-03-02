@@ -23,7 +23,7 @@ before_install:
 - cd ..
 install: true
 before_script:
- - chmod +x .utility/update_pattern_site.sh
+ - chmod +x .utility/*
 script:
   - mvn clean install -DdryRun=true -Dlicense.failOnMissingHeader=true -Dlicense.failOnNotUptodateHeader=true
 after_success:
