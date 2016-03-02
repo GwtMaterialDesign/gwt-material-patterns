@@ -21,6 +21,7 @@ before_install:
 - cd gwt-material-addins
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
+- cd gwt-material-patterns
 install: true
 before_script:
  - chmod +x .utility/update_pattern_site.sh
