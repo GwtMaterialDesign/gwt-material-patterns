@@ -48,6 +48,7 @@
         </m:MaterialSideNav>
 
         <m:MaterialContainer paddingLeft="250" paddingRight="180" paddingTop="140">
+            <m:MaterialDatePicker placeholder="Birthday" enabled="false"/>
             <!-- Featured Collections -->
             <m:MaterialLabel text="Featured Collections" marginLeft="12" fontSize="1em" textColor="grey"/>
             <m:MaterialRow>
