@@ -2,7 +2,7 @@
 A pattern layouts to build gwt-material applications rapidly
 
 ## Pattern # 1 
-### The Google Plus v1.0
+### The Google Plus v1.0 <a href="http://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot/">Demo</a> 
 This pattern is suitable for Social  Network apps to provide a collection of posts displayed in cards.
 
 <ul>
