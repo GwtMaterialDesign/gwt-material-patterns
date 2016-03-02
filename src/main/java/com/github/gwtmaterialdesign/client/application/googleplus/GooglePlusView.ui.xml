@@ -18,7 +18,7 @@
     <m:MaterialPanel>
         <m:MaterialHeader layoutPosition="FIXED" width="100%" shadow="1" depth="996">
             <m:MaterialNavBar backgroundColor="light-blue" activates="sidenav">
-                <m:MaterialNavBrand text="#1 GPlus Pattern" />
+                <m:MaterialNavBrand text="Google +" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="APPS" />
                     <m:MaterialLink iconType="NOTIFICATIONS" />
