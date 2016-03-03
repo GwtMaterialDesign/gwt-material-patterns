@@ -8,6 +8,8 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
+import gwt.material.design.client.constants.IconType;
+import gwt.material.design.client.ui.MaterialIcon;
 import gwt.material.design.client.ui.MaterialImage;
 import gwt.material.design.client.ui.MaterialLabel;
 
@@ -25,14 +27,20 @@ public class CustomerCollapsible extends Composite {
     @UiField
     MaterialImage imgUser;
 
+    @UiField
+    MaterialIcon iconStar;
+
 
     public CustomerCollapsible(UserDTO dto) {
         initWidget(uiBinder.createAndBindUi(this));
         this.dto = dto;
         lblName.setText(dto.getName());
         lblEmail.setText(dto.getEmail());
-        lblPosition.setText(dto.getAccess().getValue());
+        lblPosition.setText(dto.getPosition().getValue());
         imgUser.setUrl(dto.getPicture());
+        if(dto.isStarred()){
+            iconStar.setIconType(IconType.STAR);
+        }
     }
 
     public UserDTO getDto() {

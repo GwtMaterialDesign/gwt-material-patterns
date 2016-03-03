@@ -18,8 +18,8 @@ public class ClientModule extends AbstractPresenterModule {
         bind(ResourceLoader.class).asEagerSingleton();
 
         // DefaultPlaceManager Places
-        bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.google_plus);
-        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.google_plus);
-        bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.google_plus);
+        bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.google_drive);
+        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.google_drive);
+        bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.google_drive);
     }
 }

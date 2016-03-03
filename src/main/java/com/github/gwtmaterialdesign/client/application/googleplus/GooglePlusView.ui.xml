@@ -328,7 +328,7 @@
 
         <!-- FAB -->
         <m:MaterialFAB>
-            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googleplus/GooglePlusView.ui.xml" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="blue" size="LARGE"/>
+            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googleplus" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="blue" size="LARGE"/>
         </m:MaterialFAB>
     </m:MaterialPanel>
 </ui:UiBinder>

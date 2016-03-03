@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class UserDTO implements Serializable {
 
-    public enum Access{
+    public enum Position {
         CEO("CEO"),
         CTO("CTO"),
         DEVELOPER("Developer"),
@@ -15,7 +15,7 @@ public class UserDTO implements Serializable {
 
         private final String value;
 
-        Access(String value) {
+        Position(String value) {
             this.value = value;
         }
 
@@ -36,13 +36,13 @@ public class UserDTO implements Serializable {
     private String company;
     private boolean starred;
 
-    private Access access;
+    private Position position;
 
     public UserDTO() {}
 
-    public UserDTO(String picture, Access access, boolean starred, String name, String email, String password, String contactNo, String address, String company) {
+    public UserDTO(String picture, Position position, boolean starred, String name, String email, String password, String contactNo, String address, String company) {
         this.picture = picture;
-        this.access = access;
+        this.position = position;
         this.starred = starred;
         this.name = name;
         this.email = email;
@@ -116,11 +116,11 @@ public class UserDTO implements Serializable {
         this.picture = picture;
     }
 
-    public Access getAccess() {
-        return access;
+    public Position getPosition() {
+        return position;
     }
 
-    public void setAccess(Access access) {
-        this.access = access;
+    public void setPosition(Position position) {
+        this.position = position;
     }
 }
