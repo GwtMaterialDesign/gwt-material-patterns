@@ -16,7 +16,9 @@
         }
     </ui:style>
     <m:MaterialPanel>
+        <!-- Header -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" shadow="1" depth="996">
+            <!-- NavBar -->
             <m:MaterialNavBar backgroundColor="light-blue" activates="sidenav">
                 <m:MaterialNavBrand text="Google +" />
                 <m:MaterialNavSection float="RIGHT">
@@ -25,6 +27,7 @@
                     <m:MaterialImage circle="true" width="40px" height="40px" marginTop="12" marginRight="12" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" backgroundColor="white" />
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
+            <!-- Tab -->
             <m:MaterialRow backgroundColor="light-blue" marginBottom="0">
                 <m:MaterialColumn offset="l3 m0 s0" grid="l6 m12 s12" backgroundColor="light-blue">
                     <m:MaterialTab backgroundColor="light-blue">
@@ -36,6 +39,7 @@
             </m:MaterialRow>
         </m:MaterialHeader>
 
+        <!-- SideNav -->
         <m:MaterialSideNav m:id="sidenav" width="250" type="FLOAT" top="52" layoutPosition="FIXED">
             <m:MaterialLink text="Home" iconType="HOME" textColor="grey darken-2"/>
             <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="grey darken-2"/>
@@ -47,9 +51,9 @@
             <m:MaterialLink text="Help" iconType="HELP" textColor="grey darken-2"/>
         </m:MaterialSideNav>
 
+        <!-- Container -->
         <m:MaterialContainer paddingLeft="250" paddingRight="180" paddingTop="140">
-            <m:MaterialDatePicker placeholder="Birthday" enabled="false"/>
-            <!-- Featured Collections -->
+            <!-- Cards -->
             <m:MaterialLabel text="Featured Collections" marginLeft="12" fontSize="1em" textColor="grey"/>
             <m:MaterialRow>
                 <m:MaterialColumn grid="l3 m4 s12">
@@ -117,10 +121,9 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
 
-            <!-- Featured Post -->
+            <!-- Cards -->
             <m:MaterialLabel text="Featured Posts" marginLeft="12" fontSize="1em" textColor="grey"/>
             <m.addins:MaterialMasonry>
-                <!-- 1st Column -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>
@@ -161,7 +164,6 @@
                     </m:MaterialCard>
                 </m:MaterialColumn>
 
-                <!-- 2nd Column -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>
@@ -202,7 +204,6 @@
                     </m:MaterialCard>
                 </m:MaterialColumn>
 
-                <!-- 3rd Column -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>
@@ -243,7 +244,6 @@
                     </m:MaterialCard>
                 </m:MaterialColumn>
 
-                <!-- 4th Column -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>
@@ -284,7 +284,6 @@
                     </m:MaterialCard>
                 </m:MaterialColumn>
 
-                <!-- 5th Column -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>

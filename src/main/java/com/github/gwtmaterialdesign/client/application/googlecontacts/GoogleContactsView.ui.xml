@@ -3,7 +3,7 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui">
-    <ui:style>        
+    <ui:style>
         @external side-nav, active;
         body{
             background-color: #e9e9e9;
@@ -14,16 +14,24 @@
 
     </ui:style>
     <m:MaterialPanel>
+        <!-- Header Section -->
         <m:MaterialHeader>
-            <m:MaterialNavBar backgroundColor="blue darken-1" activates="sidenav">
-                <m:MaterialNavBrand text="#2 Contacts Pattern" />
-                <m:MaterialNavSection float="RIGHT">
-                    <m:MaterialLink iconType="SORT_BY_ALPHA" />
-                    <m:MaterialLink iconType="CALL" />
+            <!-- NavBar Component -->
+            <m:MaterialNavBar ui:field="appNav" backgroundColor="blue darken-1" activates="sidenav">
+                <m:MaterialNavBrand text="Contacts" />
+                <m:MaterialNavSection float="RIGHT" hideOn="NONE">
+                    <m:MaterialIcon iconType="SORT_BY_ALPHA" marginRight="20" />
+                    <m:MaterialIcon iconType="CALL" marginRight="20" />
+                    <m:MaterialIcon ui:field="btnSearch" iconType="SEARCH" marginRight="20" />
                 </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <!-- Search Component -->
+            <m:MaterialNavBar ui:field="searchNav" backgroundColor="white" visible="false">
+                <m:MaterialSearch ui:field="search" placeholder="Search Contact" active="true"/>
             </m:MaterialNavBar>
         </m:MaterialHeader>
 
+        <!-- SideNav Component -->
         <m:MaterialSideNav m:id="sidenav" type="CARD" width="240">
             <m:MaterialRow separator="true" marginBottom="0">
                 <m:MaterialImage marginTop="20" height="auto" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" grid="l3 m3 s3" circle="true"/>
@@ -36,5 +44,143 @@
             <m:MaterialLink iconType="FIND_IN_PAGE" text="Find Duplicates" />
             <m:MaterialLink iconType="MORE" text="More" />
         </m:MaterialSideNav>
+
+        <!-- Container -->
+        <m:MaterialContainer paddingLeft="320" paddingRight="140">
+            <m:MaterialLabel text="Starred" marginTop="32" marginLeft="24" textColor="grey"/>
+            <!-- Collapsible Starred -->
+            <m:MaterialCollapsible>
+                <m:MaterialCollapsibleItem waves="DEFAULT" width="100%">
+                    <m:MaterialCollapsibleHeader >
+                        <m:MaterialRow margin="0">
+                            <m:MaterialColumn grid="l1 s2">
+                                <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg" width="40px" circle="true" marginTop="12"/>
+                            </m:MaterialColumn>
+                            <m:MaterialLabel text="Luis Hoppe" truncate="true" fontWeight="BOLD" grid="l2 s4" marginTop="12"/>
+                            <m:MaterialLabel text="luis@mail.com" truncate="true" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
+                            <m:MaterialLabel text="Makati City, Philippines" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
+                            <m:MaterialColumn grid="l3 s3" marginTop="12">
+                                <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+                    </m:MaterialCollapsibleHeader>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem waves="DEFAULT" width="100%">
+                    <m:MaterialCollapsibleHeader >
+                        <m:MaterialRow margin="0">
+                            <m:MaterialColumn grid="l1 s2">
+                                <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/yassiryahya/128.jpg" width="40px" circle="true" marginTop="12"/>
+                            </m:MaterialColumn>
+                            <m:MaterialLabel text="Irwin Mueller" truncate="true" fontWeight="BOLD" grid="l2 s4" marginTop="12"/>
+                            <m:MaterialLabel text="irwin@mail.com" truncate="true" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
+                            <m:MaterialLabel text="Quezon City, Philippines" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
+                            <m:MaterialColumn grid="l3 s3" marginTop="12">
+                                <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+                    </m:MaterialCollapsibleHeader>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem waves="DEFAULT" width="100%">
+                    <m:MaterialCollapsibleHeader >
+                        <m:MaterialRow margin="0">
+                            <m:MaterialColumn grid="l1 s2">
+                                <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg" width="40px" circle="true" marginTop="12"/>
+                            </m:MaterialColumn>
+                            <m:MaterialLabel text="Levin Card" truncate="true" fontWeight="BOLD" grid="l2 s4" marginTop="12"/>
+                            <m:MaterialLabel text="levin@mail.com" truncate="true" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
+                            <m:MaterialLabel text="Paranaque City, Philippines" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
+                            <m:MaterialColumn grid="l3 s3" marginTop="12">
+                                <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+                    </m:MaterialCollapsibleHeader>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem waves="DEFAULT" width="100%">
+                    <m:MaterialCollapsibleHeader >
+                        <m:MaterialRow margin="0">
+                            <m:MaterialColumn grid="l1 s2">
+                                <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/lmjabreu/128.jpg" width="40px" circle="true" marginTop="12"/>
+                            </m:MaterialColumn>
+                            <m:MaterialLabel text="Dr. Cassie Keeling" truncate="true" fontWeight="BOLD" grid="l2 s4" marginTop="12"/>
+                            <m:MaterialLabel text="cassie@mail.com" truncate="true" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
+                            <m:MaterialLabel text="Manila City, Philippines" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
+                            <m:MaterialColumn grid="l3 s3" marginTop="12">
+                                <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+                    </m:MaterialCollapsibleHeader>
+                </m:MaterialCollapsibleItem>
+            </m:MaterialCollapsible>
+
+            <!-- Collapsible Frequent Contacts -->
+            <m:MaterialLabel text="Frequently Contacted" marginTop="32" marginLeft="24" textColor="grey"/>
+            <m:MaterialCollapsible>
+                <m:MaterialCollapsibleItem waves="DEFAULT" width="100%">
+                    <m:MaterialCollapsibleHeader >
+                        <m:MaterialRow margin="0">
+                            <m:MaterialColumn grid="l1 s2">
+                                <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg" width="40px" circle="true" marginTop="12"/>
+                            </m:MaterialColumn>
+                            <m:MaterialLabel text="Luis Hoppe" truncate="true" fontWeight="BOLD" grid="l2 s4" marginTop="12"/>
+                            <m:MaterialLabel text="luis@mail.com" truncate="true" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
+                            <m:MaterialLabel text="Makati City, Philippines" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
+                            <m:MaterialColumn grid="l3 s3" marginTop="12">
+                                <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+                    </m:MaterialCollapsibleHeader>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem waves="DEFAULT" width="100%">
+                    <m:MaterialCollapsibleHeader >
+                        <m:MaterialRow margin="0">
+                            <m:MaterialColumn grid="l1 s2">
+                                <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg" width="40px" circle="true" marginTop="12"/>
+                            </m:MaterialColumn>
+                            <m:MaterialLabel text="Levin Card" truncate="true" fontWeight="BOLD" grid="l2 s4" marginTop="12"/>
+                            <m:MaterialLabel text="levin@mail.com" truncate="true" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
+                            <m:MaterialLabel text="Paranaque City, Philippines" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
+                            <m:MaterialColumn grid="l3 s3" marginTop="12">
+                                <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+                    </m:MaterialCollapsibleHeader>
+                </m:MaterialCollapsibleItem>
+
+                <m:MaterialCollapsibleItem waves="DEFAULT" width="100%">
+                    <m:MaterialCollapsibleHeader >
+                        <m:MaterialRow margin="0">
+                            <m:MaterialColumn grid="l1 s2">
+                                <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/lmjabreu/128.jpg" width="40px" circle="true" marginTop="12"/>
+                            </m:MaterialColumn>
+                            <m:MaterialLabel text="Dr. Cassie Keeling" truncate="true" fontWeight="BOLD" grid="l2 s4" marginTop="12"/>
+                            <m:MaterialLabel text="cassie@mail.com" truncate="true" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
+                            <m:MaterialLabel text="Manila City, Philippines" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
+                            <m:MaterialColumn grid="l3 s3" marginTop="12">
+                                <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
+                                <m:MaterialIcon iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+                    </m:MaterialCollapsibleHeader>
+                </m:MaterialCollapsibleItem>
+            </m:MaterialCollapsible>
+
+        </m:MaterialContainer>
     </m:MaterialPanel>
 </ui:UiBinder>
