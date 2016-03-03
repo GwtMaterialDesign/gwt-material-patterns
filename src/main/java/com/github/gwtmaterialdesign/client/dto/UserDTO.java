@@ -1,0 +1,126 @@
+package com.github.gwtmaterialdesign.client.dto;
+
+import java.io.Serializable;
+
+/**
+ * Created by Mark Kevin on 1/13/2016.
+ */
+public class UserDTO implements Serializable {
+
+    public enum Access{
+        CEO("CEO"),
+        CTO("CTO"),
+        DEVELOPER("Developer"),
+        MARKETING("Marketing");
+
+        private final String value;
+
+        Access(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
+    }
+
+    private String picture;
+
+    private String name;
+    private String email;
+    private String password;
+
+    private String address;
+    private String contactNo;
+
+    private String company;
+    private boolean starred;
+
+    private Access access;
+
+    public UserDTO() {}
+
+    public UserDTO(String picture, Access access, boolean starred, String name, String email, String password, String contactNo, String address, String company) {
+        this.picture = picture;
+        this.access = access;
+        this.starred = starred;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.contactNo = contactNo;
+        this.address = address;
+        this.company = company;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getContactNo() {
+        return contactNo;
+    }
+
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
+    }
+
+    public boolean isStarred() {
+        return starred;
+    }
+
+    public void setStarred(boolean starred) {
+        this.starred = starred;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
+    public Access getAccess() {
+        return access;
+    }
+
+    public void setAccess(Access access) {
+        this.access = access;
+    }
+}
