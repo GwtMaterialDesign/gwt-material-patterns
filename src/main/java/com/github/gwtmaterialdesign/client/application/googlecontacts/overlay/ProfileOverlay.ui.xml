@@ -1,0 +1,68 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui">
+    <ui:style>
+        .colaps{
+            box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+        }
+    </ui:style>
+    <m.addins:MaterialOverlay ui:field="overlay" visibility="HIDDEN" opacity="0" backgroundColor="grey lighten-4">
+        <m:MaterialIcon ui:field="btnCloseProfile" fontSize="2.5em" iconType="CLOSE" layoutPosition="FIXED" right="20" top="20"/>
+        <m:MaterialRow width="80%" paddingTop="40">
+            <m:MaterialColumn grid="l4 s12 m12" textAlign="CENTER">
+                <m:MaterialRow>
+                    <m:MaterialIcon waves="DEFAULT" circle="true" iconType="STAR" iconColor="amber darken-2" float="RIGHT"/>
+                    <m:MaterialIcon waves="DEFAULT" circle="true" iconType="MORE_VERT" float="RIGHT"/>
+                </m:MaterialRow>
+                <m:MaterialImage ui:field="imgProfile" circle="true" />
+                <m:MaterialLabel ui:field="lblName" fontSize="2em" marginTop="40" fontWeight="BOLD"/>
+                <m:MaterialLink ui:field="lblCompany" textColor="black" grid="l12 s12 m12"/>
+                <m:MaterialLabel ui:field="lblPosition" fontSize="0.8em" textColor="grey" marginBottom="40" grid="l12 s12 m12"/>
+                <m:MaterialButton text="Send Email" waves="DEFAULT" iconType="SEND" iconColor="blue" backgroundColor="white" textColor="black" marginBottom="20"/>
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="l8 s12 m12">
+                <!-- Contact Information -->
+                <m:MaterialCard marginTop="0">
+                    <m:MaterialCardContent>
+                        <m:MaterialLabel grid="l10 s10 m10" text="Contact Information" fontSize="1.5em" />
+                        <m:MaterialPanel ui:field="infoPanel" marginTop="60">
+                            <m:MaterialRow>
+                                <m:MaterialLink ui:field="lblEmail" text="john@mail.com" iconType="MAIL" iconPosition="LEFT" textColor="grey" fontWeight="BOLD" grid="l8 s8 m8"/>
+                                <m:MaterialLabel text="Home" textColor="grey" grid="l4 s4 m4" textAlign="RIGHT"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow>
+                                <m:MaterialLink ui:field="lblWorkEmail" text="john@mail.com" iconType="MAIL" iconPosition="LEFT" textColor="grey" fontWeight="BOLD" grid="l8 s8 m8"/>
+                                <m:MaterialLabel text="Work" textColor="grey" grid="l4 s4 m4" textAlign="RIGHT"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow>
+                                <m:MaterialLink ui:field="lblNumber" text="555-234-7654" iconType="PHONE" iconPosition="LEFT" textColor="grey" fontWeight="BOLD" grid="l8 s8 m8"/>
+                                <m:MaterialLabel text="Home" textColor="grey" grid="l4 s4 m4" textAlign="RIGHT"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow>
+                                <m:MaterialLink ui:field="lblWorkNumber" text="555-234-7654" iconType="PHONE" iconPosition="LEFT" textColor="grey" fontWeight="BOLD" grid="l8 s8 m8"/>
+                                <m:MaterialLabel text="Home" textColor="grey" grid="l4 s4 m4" textAlign="RIGHT"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow>
+                                <m:MaterialLink ui:field="lblAddress" text="Avida Towers Makati Philippines" iconType="LOCATION_ON" iconPosition="LEFT" textColor="grey" fontWeight="BOLD" grid="l8 s8 m8"/>
+                                <m:MaterialLabel text="Home" textColor="grey" grid="l4 s4 m4" textAlign="RIGHT"/>
+                            </m:MaterialRow>
+                        </m:MaterialPanel>
+                        <m:MaterialPanel ui:field="infoEditPanel" marginTop="20" visible="false">
+                            <m:MaterialRow>
+                                <m:MaterialTextBox placeholder="Email Address (Work)" grid="l6 m12 s12"/>
+                                <m:MaterialTextBox placeholder="Email Address (Home)" grid="l6 m12 s12"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow>
+                                <m:MaterialTextBox placeholder="Contact No. (Home)" grid="l6 m12 s12"/>
+                                <m:MaterialTextBox placeholder="Contact No. (Work)" grid="l6 m12 s12"/>
+                            </m:MaterialRow>
+                            <m:MaterialTextBox placeholder="Address (Home)" />
+                        </m:MaterialPanel>
+                    </m:MaterialCardContent>
+                </m:MaterialCard>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+    </m.addins:MaterialOverlay>
+</ui:UiBinder>
