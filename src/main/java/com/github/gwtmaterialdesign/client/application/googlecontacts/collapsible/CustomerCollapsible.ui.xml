@@ -10,10 +10,10 @@
                 <m:MaterialColumn grid="l1 s2">
                     <m:MaterialImage ui:field="imgUser" width="40px" circle="true" marginTop="12"/>
                 </m:MaterialColumn>
-                <m:MaterialLabel ui:field="lblName" truncate="true" fontWeight="BOLD" grid="l2 s4" marginTop="12"/>
-                <m:MaterialLabel ui:field="lblEmail" truncate="true" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
+                <m:MaterialLabel ui:field="lblName" truncate="true" fontWeight="BOLD" grid="l2 s6" marginTop="12"/>
+                <m:MaterialLabel ui:field="lblEmail" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s3" marginTop="12"/>
                 <m:MaterialLabel ui:field="lblPosition" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
-                <m:MaterialColumn grid="l3 s3" marginTop="12">
+                <m:MaterialColumn grid="l3 s4" marginTop="12">
                     <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
                     <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
                     <m:MaterialIcon ui:field="iconStar" iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>

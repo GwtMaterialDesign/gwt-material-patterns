@@ -22,8 +22,8 @@
             <m:MaterialNavBar ui:field="appNav" backgroundColor="blue darken-1" activates="sidenav">
                 <m:MaterialNavBrand text="Contacts" />
                 <m:MaterialNavSection float="RIGHT" hideOn="NONE">
-                    <m:MaterialIcon activates="dpSort" iconType="SORT_BY_ALPHA" marginRight="20" />
-                    <m:MaterialIcon iconType="CALL" marginRight="20" />
+                    <m:MaterialIcon hideOn="HIDE_ON_SMALL_DOWN" activates="dpSort" iconType="SORT_BY_ALPHA" marginRight="20" />
+                    <m:MaterialIcon hideOn="HIDE_ON_SMALL_DOWN" iconType="CALL" marginRight="20" />
                     <m:MaterialIcon ui:field="btnSearch" iconType="SEARCH" marginRight="20" />
                     <m:MaterialDropDown activator="dpSort" width="250" belowOrigin="true" constrainWidth="false">
                         <m:MaterialLink ui:field="sortName" text="Full Name" textColor="grey darken-1"/>

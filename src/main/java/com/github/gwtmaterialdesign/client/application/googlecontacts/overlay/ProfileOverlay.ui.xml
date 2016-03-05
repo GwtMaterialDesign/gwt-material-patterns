@@ -8,7 +8,7 @@
             -moz-box-shadow: none !important;
         }
     </ui:style>
-    <m.addins:MaterialOverlay ui:field="overlay" visibility="HIDDEN" opacity="0" backgroundColor="grey lighten-4">
+    <m.addins:MaterialOverlay ui:field="overlay" visibility="HIDDEN" opacity="0" overflow="AUTO" backgroundColor="grey lighten-4">
         <m:MaterialIcon ui:field="btnCloseProfile" fontSize="2.5em" iconType="CLOSE" layoutPosition="FIXED" right="20" top="20"/>
         <m:MaterialRow width="80%" paddingTop="40">
             <m:MaterialColumn grid="l4 s12 m12" textAlign="CENTER">
