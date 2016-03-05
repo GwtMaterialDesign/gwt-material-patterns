@@ -71,12 +71,12 @@
         <m:MaterialContainer paddingLeft="240" paddingTop="64">
             <m:MaterialRow layoutPosition="RELATIVE">
                 <m:MaterialRow ui:field="mainPanel" backgroundColor="white" layoutPosition="RELATIVE" marginBottom="0" grid="l9" padding="20" addStyleNames="{style.animation}">
-                    <m:MaterialRow ui:field="mainHeader" layoutPosition="FIXED" backgroundColor="grey lighten-3" top="64" height="60px" marginBottom="0" paddingTop="20" shadow="1" left="240" right="334" paddingLeft="40" depth="999" addStyleNames="{style.animation}">
-                        <m:MaterialLink text="Name" iconType="ARROW_UPWARD" iconPosition="RIGHT" fontWeight="BOLD" grid="l5" textColor="grey darken-1"/>
+                    <m:MaterialRow ui:field="mainHeader" marginBottom="0" paddingLeft="40" addStyleNames="{style.animation}">
+                        <m:MaterialLink text="Name" iconType="ARROW_UPWARD" iconPosition="LEFT" fontWeight="BOLD" grid="l5" textColor="grey darken-1"/>
                         <m:MaterialLink text="Shared by" grid="l4" textColor="grey darken-1"/>
                         <m:MaterialLink text="Share date" grid="l3" textColor="grey darken-1"/>
                     </m:MaterialRow>
-                    <m:MaterialCollapsible ui:field="driveColaps" marginTop="40" padding="0"/>
+                    <m:MaterialCollapsible ui:field="driveColaps" marginTop="20" padding="0"/>
                 </m:MaterialRow>
 
                 <m:MaterialPanel ui:field="rightPanel" grid="l3" padding="0" backgroundColor="white" height="100%" layoutPosition="FIXED" top="64" right="-40" paddingRight="40" addStyleNames="{style.bordered} {style.animation}">
