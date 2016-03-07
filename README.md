@@ -1,5 +1,5 @@
 <img src="http://i.imgur.com/vCZg1GH.png" />
-<h2>gwt-material-patterns</h2>
+##gwt-material-patterns [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-patterns.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-patterns)
 <p>A pattern layouts to build gwt-material applications rapidly</p>
 
 ## Pattern # 1 
