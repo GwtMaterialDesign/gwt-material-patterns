@@ -1,5 +1,6 @@
-# gwt-material-patterns
-A pattern layouts to build gwt-material applications rapidly
+<img src="http://i.imgur.com/vCZg1GH.png" />
+<h2>gwt-material-patterns</h2>
+<p>A pattern layouts to build gwt-material applications rapidly</p>
 
 ## Pattern # 1 
 ### The Google Plus v1.0 <a href="http://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot/#google_plus">Demo</a> 
