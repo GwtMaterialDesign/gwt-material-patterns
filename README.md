@@ -34,3 +34,22 @@ This pattern is suitable for Contact / User List apps to provide a collapsible l
 <img src="http://i.imgur.com/TCQ4zot.gif" />
 #### Mobile View
 <img src="http://i.imgur.com/SxhMv92.gif" />
+
+## Pattern #2
+### The Google Drive v1.0 <a href="http://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot#google_drive">Demo</a>
+This pattern is suitable for Document Management Systems.
+#### Material Components
+<ul>
+  <li> Fixed Navbar with link dropdown for Sorting</li>
+  <li> Float Sidenav </li>
+  <li> Search Nav to filter the files</li>
+  <li> Display all files into collapsible items </li>
+  <li> Added right panel to display file details / activities </li>
+  <li> Tabs for more details / activities </li>
+  <li> Chips as file tags </li>
+  <li> Circular user image for those who can view the file </li>
+</ul>
+#### Desktop / Tablet View
+<img src="http://i.imgur.com/LkQo3Nb.gif" />
+#### Mobile View
+<img src="http://i.imgur.com/0MGLaYo.gif" />
