@@ -24,7 +24,7 @@ import java.util.List;
 
 
 public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.MyView {
-    private boolean toggle;
+    private boolean toggle = true;
 
     interface Binder extends UiBinder<Widget, GoogleDriveView> {
     }

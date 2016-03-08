@@ -80,7 +80,7 @@
 
         </m:MaterialSideNav>
 
-        <m:MaterialRow ui:field="rightPanel" overflow="AUTO" grid="l3 m3 s12" depth="995" padding="0" backgroundColor="white" height="100%" layoutPosition="FIXED" top="56" right="0" addStyleNames="{style.bordered} {style.animation}">
+        <m:MaterialRow ui:field="rightPanel" overflow="AUTO" grid="l3 m3 s12" depth="995" padding="0" backgroundColor="white" height="100%" layoutPosition="FIXED" top="56" right="-374" addStyleNames="{style.bordered} {style.animation}">
             <!-- Header Info -->
             <m:MaterialRow paddingTop="20">
                 <m:MaterialIcon ui:field="iconViewFile" iconSize="MEDIUM" iconColor="grey darken-1" grid="l4"/>
@@ -156,7 +156,7 @@
         <!-- Container -->
         <m:MaterialContainer paddingLeft="240" paddingTop="64">
             <m:MaterialRow layoutPosition="RELATIVE" grid="l12 s12 m12">
-                <m:MaterialPanel ui:field="mainPanel" backgroundColor="white" layoutPosition="RELATIVE" marginBottom="0" grid="l9 m9 s12" padding="20" addStyleNames="{style.animation}">
+                <m:MaterialPanel ui:field="mainPanel" backgroundColor="white" layoutPosition="RELATIVE" marginBottom="0" grid="l12 m12 s12" padding="20" addStyleNames="{style.animation}">
                     <m:MaterialRow ui:field="mainHeader" marginBottom="0" paddingLeft="40" addStyleNames="{style.animation}">
                         <m:MaterialLink text="Name" grid="l5 m5 s6" textColor="grey darken-1"/>
                         <m:MaterialLink text="Shared by" grid="l4 m4 s6" textColor="grey darken-1"/>
