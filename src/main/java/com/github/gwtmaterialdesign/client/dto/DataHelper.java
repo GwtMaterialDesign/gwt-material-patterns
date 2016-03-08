@@ -32,16 +32,16 @@ public class DataHelper {
 
     public static List<DriveDTO> getAllDrives() {
         List<DriveDTO> list = new ArrayList<>();
-        list.add(new DriveDTO(IconType.FOLDER, "File 1", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 2", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER, "File 3", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 4", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 5", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER, "File 6", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER, "File 7", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 8", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 9", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
-        list.add(new DriveDTO(IconType.FOLDER, "File 10", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "John Doe", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER, "File 1", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "Luis Hoppe", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 2", "https://s3.amazonaws.com/uifaces/faces/twitter/yassiryahya/128.jpg", "Irwin Mueller", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER, "File 3", "https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg", "Levin Card", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 4", "https://s3.amazonaws.com/uifaces/faces/twitter/lmjabreu/128.jpg", "Dr. Cassie Keeling", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 5", "https://s3.amazonaws.com/uifaces/faces/twitter/ariil/128.jpg", "Madelynn Schamberger", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER, "File 6", "https://s3.amazonaws.com/uifaces/faces/twitter/devankoshal/128.jpg", "Dominique Schmidt", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER, "File 7", "https://s3.amazonaws.com/uifaces/faces/twitter/karthipanraj/128.jpg", "Rowland Heller", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 8", "https://s3.amazonaws.com/uifaces/faces/twitter/GavicoInd/128.jpg", "Quincy Schimmel", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 9", "https://s3.amazonaws.com/uifaces/faces/twitter/roybarberuk/128.jpg", "Tierra VonRueden", "March 3, 2016"));
+        list.add(new DriveDTO(IconType.FOLDER, "File 10", "https://s3.amazonaws.com/uifaces/faces/twitter/tonymillion/128.jpg", "Clint Heller", "March 3, 2016"));
         return list;
 
     }

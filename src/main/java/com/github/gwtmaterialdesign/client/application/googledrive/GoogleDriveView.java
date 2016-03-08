@@ -1,10 +1,11 @@
 package com.github.gwtmaterialdesign.client.application.googledrive;
 
-import com.github.gwtmaterialdesign.client.application.googlecontacts.collapsible.CustomerCollapsible;
 import com.github.gwtmaterialdesign.client.application.googledrive.collapsible.DriveCollapsible;
 import com.github.gwtmaterialdesign.client.dto.DataHelper;
 import com.github.gwtmaterialdesign.client.dto.DriveDTO;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.KeyUpEvent;
+import com.google.gwt.event.dom.client.KeyUpHandler;
 import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -15,6 +16,10 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 
 public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.MyView {
@@ -39,10 +44,10 @@ public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.My
     MaterialLabel lblViewFile;
 
     @UiField
-    MaterialPanel rightPanel;
+    MaterialPanel mainPanel, emptyState;
 
     @UiField
-    MaterialRow mainPanel, mainHeader;
+    MaterialRow mainHeader, rightPanel;
 
     @Inject
     GoogleDriveView(Binder uiBinder) {
@@ -54,16 +59,19 @@ public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.My
                 searchNav.setVisible(false);
             }
         });
-        populateDrive();
-    }
-
-    private void populateDrive() {
-        for(DriveDTO dto : DataHelper.getAllDrives()){
-            driveColaps.add(new DriveCollapsible(this, dto));
-        }
-        if(DataHelper.getAllDrives().size() > 0){
-            setViewInfo(DataHelper.getAllDrives().get(0));
-        }
+        search.addKeyUpHandler(new KeyUpHandler() {
+            @Override
+            public void onKeyUp(KeyUpEvent event) {
+                List<DriveDTO> filteredFiles = new ArrayList<>();
+                for(DriveDTO dto : DataHelper.getAllDrives()) {
+                    if(dto.getFileName().toLowerCase().contains(search.getText().toLowerCase())){
+                        filteredFiles.add(dto);
+                    }
+                }
+                populateFiles(filteredFiles);
+            }
+        });
+        populateFiles(DataHelper.getAllDrives());
     }
 
     public void setViewInfo(DriveDTO dto) {
@@ -82,8 +90,8 @@ public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.My
         if(toggle){
             // show the right nav
             mainHeader.setRight(334);
-            mainPanel.setGrid("l9");
-            rightPanel.setRight(-40);
+            mainPanel.setGrid("l9 m9 s12");
+            rightPanel.setRight(0);
             toggle = false;
         }else{
             hidePanel();
@@ -98,8 +106,66 @@ public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.My
     private void hidePanel() {
         // hide the right nav
         mainHeader.setRight(0);
-        mainPanel.setGrid("l12");
+        mainPanel.setGrid("l12 s12 m12");
         rightPanel.setRight(-374);
         toggle = true;
     }
+
+    @UiHandler("sortFileName")
+    void onSortFileName(ClickEvent e) {
+        List<DriveDTO> sortedFiles = DataHelper.getAllDrives();
+        Collections.sort(sortedFiles, new Comparator<DriveDTO>() {
+            @Override
+            public int compare(DriveDTO o1, DriveDTO o2) {
+                return o1.getFileName().compareToIgnoreCase(o2.getFileName());
+            }
+        });
+        populateFiles(sortedFiles);
+    }
+
+    @UiHandler("sortSharedBy")
+    void onSortSharedBy(ClickEvent e) {
+        List<DriveDTO> sortedFiles = DataHelper.getAllDrives();
+        Collections.sort(sortedFiles, new Comparator<DriveDTO>() {
+            @Override
+            public int compare(DriveDTO o1, DriveDTO o2) {
+                return o1.getOwner().compareToIgnoreCase(o2.getOwner());
+            }
+        });
+        populateFiles(sortedFiles);
+    }
+
+    @UiHandler("sortSharedDate")
+    void onSortSharedDate(ClickEvent e) {
+        List<DriveDTO> sortedFiles = DataHelper.getAllDrives();
+        Collections.sort(sortedFiles, new Comparator<DriveDTO>() {
+            @Override
+            public int compare(DriveDTO o1, DriveDTO o2) {
+                return o1.getDate().compareToIgnoreCase(o2.getDate());
+            }
+        });
+        populateFiles(sortedFiles);
+    }
+
+    /**
+     * Populate all files with given list of files
+     * @param allFiles
+     */
+    private void populateFiles(List<DriveDTO> allFiles) {
+        driveColaps.clear();
+                for(DriveDTO dto : allFiles) {
+            driveColaps.add(new DriveCollapsible(this, dto));
+        }
+        if(allFiles.size() > 0){
+            emptyState.setVisible(false);
+            mainPanel.setVisible(true);
+            rightPanel.setVisible(true);
+            setViewInfo(DataHelper.getAllDrives().get(0));
+        }else {
+            emptyState.setVisible(true);
+            mainPanel.setVisible(false);
+            rightPanel.setVisible(false);
+        }
+    }
+
 }
