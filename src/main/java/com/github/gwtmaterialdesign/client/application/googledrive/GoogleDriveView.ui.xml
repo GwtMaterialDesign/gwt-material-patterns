@@ -22,6 +22,13 @@
         }
     </ui:style>
     <m:MaterialPanel>
+        <!-- Splash screen -->
+        <m:MaterialSplashScreen ui:field="splash" backgroundColor="white" depth="1000" textAlign="CENTER">
+            <m:MaterialImage width="150px" url="http://www.sketchappsources.com/resources/source-image/googledrive_logo.png" />
+            <m:MaterialLabel text="Pattern #3" fontSize="2em" fontWeight="LIGHTER"/>
+            <m:MaterialLabel text="GDrive Pattern for Document Management" />
+        </m:MaterialSplashScreen>
+        <!-- Header -->
         <!-- Header Section -->
         <m:MaterialHeader depth="996" layoutPosition="FIXED" width="100%">
             <!-- NavBar Component -->

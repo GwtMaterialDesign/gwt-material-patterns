@@ -11,6 +11,7 @@ import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.*;
@@ -49,9 +50,20 @@ public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.My
     @UiField
     MaterialRow mainHeader, rightPanel;
 
+    @UiField
+    MaterialSplashScreen splash;
+
     @Inject
     GoogleDriveView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        splash.show();
+        Timer t = new Timer() {
+            @Override
+            public void run() {
+                splash.hide();
+            }
+        };
+        t.schedule(5000);
         search.addCloseHandler(new CloseHandler<String>() {
             @Override
             public void onClose(CloseEvent<String> event) {

@@ -16,6 +16,12 @@
         }
     </ui:style>
     <m:MaterialPanel>
+        <!-- Splash screen -->
+        <m:MaterialSplashScreen ui:field="splash" backgroundColor="white" depth="1000" textAlign="CENTER">
+            <m:MaterialImage width="120px" url="http://assets.materialup.com/uploads/b8f2348a-dfa8-4c0a-b696-112e1c293b95/googleplus-logos-02.png" />
+            <m:MaterialLabel text="Pattern #1" fontSize="2em" fontWeight="LIGHTER"/>
+            <m:MaterialLabel text="GPlus Pattern for Social Network" />
+        </m:MaterialSplashScreen>
         <!-- Header -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" shadow="1" depth="996">
             <!-- NavBar -->

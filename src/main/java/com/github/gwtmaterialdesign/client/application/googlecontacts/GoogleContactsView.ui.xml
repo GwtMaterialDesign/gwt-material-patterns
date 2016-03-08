@@ -16,6 +16,12 @@
 
     </ui:style>
     <m:MaterialPanel>
+        <!-- Splash screen -->
+        <m:MaterialSplashScreen ui:field="splash" backgroundColor="white" depth="1000" textAlign="CENTER">
+            <m:MaterialImage width="300px" marginTop="-100" url="http://assets.materialup.com/uploads/f1541fbb-6616-4dff-89c1-724371c40a42/contacts.gif" />
+            <m:MaterialLabel text="Pattern #2" fontSize="2em" fontWeight="LIGHTER"/>
+            <m:MaterialLabel text="Contacts Pattern for User Management" />
+        </m:MaterialSplashScreen>
         <!-- Header Section -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" depth="996" top="0">
             <!-- NavBar Component -->
