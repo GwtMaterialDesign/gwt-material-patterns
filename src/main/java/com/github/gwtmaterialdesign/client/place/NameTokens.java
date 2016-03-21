@@ -5,6 +5,7 @@ public class NameTokens {
     public static final String google_plus = "google_plus";
     public static final String google_contacts = "google_contacts";
     public static final String google_drive = "google_drive";
+    public static final String google_inbox = "google_inbox";
 
     public static String getGoogle_plus() {
         return google_plus;
@@ -16,5 +17,9 @@ public class NameTokens {
 
     public static String getGoogle_drive() {
         return google_drive;
+    }
+
+    public static String getGoogle_inbox() {
+        return google_inbox;
     }
 }
