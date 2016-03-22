@@ -1,0 +1,32 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+>
+    <ui:style>
+        @external .active, .collapsible-header;
+        .colapsHeader.active{
+            background: #e0e0e0;
+        }
+        .colapsItem .collapsible-header:hover .iconPanel{
+            opacity: 1 !important;
+        }
+    </ui:style>
+    <m:MaterialCollapsibleItem ui:field="colapsItem" waves="DEFAULT" addStyleNames="{style.colapsItem}">
+        <m:MaterialCollapsibleHeader>
+            <m:MaterialRow marginBottom="0">
+                <m:MaterialColumn ui:field="imgCol" grid="l1 m2 s2">
+                    <m:MaterialImage ui:field="imgCategory" width="28px" circle="true" marginTop="12"/>
+                </m:MaterialColumn>
+                <m:MaterialLink ui:field="lblCategory" grid="l4" fontWeight="BOLD" truncate="true" />
+                <m:MaterialLabel ui:field="lblDescription" grid="l6 m6 s6" truncate="true" />
+                <m:MaterialColumn grid="l4 m4 s4" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="white" opacity="0" addStyleNames="{style.iconPanel}">
+                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="PIN_DROP" />
+                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="ACCESS_TIME" />
+                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="DELETE" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+        </m:MaterialCollapsibleHeader>
+        <m:MaterialCollapsibleBody ui:field="colapsBody">
+            <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="grey"/>
+        </m:MaterialCollapsibleBody>
+    </m:MaterialCollapsibleItem>
+</ui:UiBinder>
