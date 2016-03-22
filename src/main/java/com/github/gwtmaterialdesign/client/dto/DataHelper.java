@@ -43,7 +43,42 @@ public class DataHelper {
         list.add(new DriveDTO(IconType.FOLDER_SHARED, "File 9", "https://s3.amazonaws.com/uifaces/faces/twitter/roybarberuk/128.jpg", "Tierra VonRueden", "March 3, 2016"));
         list.add(new DriveDTO(IconType.FOLDER, "File 10", "https://s3.amazonaws.com/uifaces/faces/twitter/tonymillion/128.jpg", "Clint Heller", "March 3, 2016"));
         return list;
+    }
 
+    public static List<InboxDTO> getAllTodayInbox() {
+        List<InboxDTO> list = new ArrayList<>();
+
+        // Children
+        List<InboxDTO> children = new ArrayList<>();
+        children.add(new InboxDTO("https://lh5.googleusercontent.com/-SWaCREsCOUQ/AAAAAAAAAAI/AAAAAAAAAAA/0B6hSKehnxg/w28-h28/photo.jpg", "Paypal", "John Doe, how to receive important PayPal messages in your inbox", "black"));
+        children.add(new InboxDTO("https://lh5.googleusercontent.com/-SWaCREsCOUQ/AAAAAAAAAAI/AAAAAAAAAAA/0B6hSKehnxg/w28-h28/photo.jpg", "Paypal", "John Doe, how to receive important PayPal messages in your inbox", "black"));
+        children.add(new InboxDTO("https://lh5.googleusercontent.com/-SWaCREsCOUQ/AAAAAAAAAAI/AAAAAAAAAAA/0B6hSKehnxg/w28-h28/photo.jpg", "Paypal", "John Doe, how to receive important PayPal messages in your inbox", "black"));
+
+        InboxDTO promos = new InboxDTO(IconType.LOCAL_OFFER, "Promos", "Paypal, LAZADA, CashCashPinoy, Dribble, Inbox by Inbox", "blue lighten-2");
+        promos.setChildren(children);
+        list.add(promos);
+
+        InboxDTO updates = new InboxDTO(IconType.FLAG, "Updates", "Wattpad, Code Fights, Job Central, Gitter Notifications", "deep-orange");
+        updates.setChildren(children);
+        list.add(updates);
+
+        InboxDTO finance = new InboxDTO(IconType.POLL, "Finance", "Globe Telecom, Paypal, China Bank", "green");
+        finance.setChildren(children);
+        list.add(finance);
+
+        InboxDTO purchase = new InboxDTO(IconType.LOCAL_GROCERY_STORE, "Purchase", "Lazada, Starbucks, Sony", "brown");
+        purchase.setChildren(children);
+        list.add(purchase);
+
+        return list;
+    }
+
+    public static List<InboxLinkDTO> getAllYesterdayInbox() {
+        List<InboxLinkDTO> list = new ArrayList<>();
+        list.add(new InboxLinkDTO("https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg", "Brandon", "Welcome to Google Cardboard", "Experience the awesome virtual reality using cardboard and your phone", "https://i.ytimg.com/vi/eT9vmpE8WcY/maxresdefault.jpg", "Google Cardboard", "https://www.google.com/get/cardboard/"));
+        list.add(new InboxLinkDTO("https://s3.amazonaws.com/uifaces/faces/twitter/yassiryahya/128.jpg", "Irwin Mueller", "Welcome to Project Loon", "BALLOON-POWERED INTERNET FOR EVERYONE", "http://www.unionroom.com/wp-content/uploads/2014/11/google-loon.jpg", "Project Loon", "https://www.google.com/loon/"));
+        list.add(new InboxLinkDTO("https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "Luis Hoppe", "Welcome to Project Tango", "Project Tango combines 3D motion tracking with depth sensing to give your mobile device the ability to know where it is and how it moves through space.", "https://i.ytimg.com/vi/Qe10ExwzCqk/maxresdefault.jpg", "Project Tango", "https://www.google.com/atap/project-tango/"));
+        return list;
     }
 
 }
