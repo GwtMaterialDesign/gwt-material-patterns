@@ -1,6 +1,5 @@
 package com.github.gwtmaterialdesign.client.application.googleinbox;
 
-import com.github.gwtmaterialdesign.client.application.ApplicationPresenter;
 import com.github.gwtmaterialdesign.client.place.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -24,7 +23,7 @@ public class GoogleInboxPresenter extends Presenter<GoogleInboxPresenter.MyView,
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+        super(eventBus, view, proxy, RevealType.Root);
 
     }
 

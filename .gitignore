@@ -115,3 +115,5 @@ target/gwt-material-patterns-1.0-SNAPSHOT/WEB-INF/lib/gwt-material-themes-1.5.0-
 target/gwt-unitCache/gwt-unitCache-c2c3dd5baf648a0bb199047a818be5e560f48982-0000015397F6AF0B
 target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/
+.idea/
