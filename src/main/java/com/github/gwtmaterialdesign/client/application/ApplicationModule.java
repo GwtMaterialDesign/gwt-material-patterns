@@ -9,10 +9,10 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 public class ApplicationModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        install(new GoogleInboxModule());
         install(new GoogleDriveModule());
         install(new GoogleContactsModule());
         install(new GooglePlusModule());
+        install(new GoogleInboxModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);
