@@ -41,7 +41,7 @@
         </m:MaterialSideNav>
 
         <!-- Container -->
-        <m:MaterialContainer paddingLeft="330" paddingRight="200" marginTop="80">
+        <m:MaterialContainer paddingLeft="330" paddingRight="100" marginTop="80">
             <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="grey"/>
             <m:MaterialCollapsible ui:field="inboxColaps" />
             <m:MaterialLabel text="Yesterday" marginTop="32" marginLeft="24" textColor="grey"/>
