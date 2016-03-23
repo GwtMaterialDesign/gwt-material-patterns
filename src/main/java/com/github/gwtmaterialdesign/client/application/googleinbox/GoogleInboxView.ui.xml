@@ -13,6 +13,12 @@
         }
     </ui:style>
     <m:MaterialPanel>
+        <!-- Splash screen -->
+        <m:MaterialSplashScreen ui:field="splash" backgroundColor="white" depth="1000" textAlign="CENTER">
+            <m:MaterialImage width="280px" url="http://assets.materialup.com/uploads/6fa4e746-4269-4900-98bf-0c102f5bf7c8/inbox.gif" />
+            <m:MaterialLabel text="Pattern #4" fontSize="2em" fontWeight="LIGHTER"/>
+            <m:MaterialLabel text="Inbox Pattern for Email" />
+        </m:MaterialSplashScreen>
         <!-- Header -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" depth="996" top="0" >
             <!-- NavBar -->
