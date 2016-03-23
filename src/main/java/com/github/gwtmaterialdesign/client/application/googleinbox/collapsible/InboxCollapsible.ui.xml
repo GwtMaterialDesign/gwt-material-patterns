@@ -18,7 +18,7 @@
                 </m:MaterialColumn>
                 <m:MaterialLink ui:field="lblCategory" grid="l4" fontWeight="BOLD" truncate="true" />
                 <m:MaterialLabel ui:field="lblDescription" grid="l6 m6 s6" truncate="true" />
-                <m:MaterialColumn grid="l4 m4 s4" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="white" opacity="0" addStyleNames="{style.iconPanel}">
+                <m:MaterialColumn grid="l4 m4 s8" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="white" opacity="0" addStyleNames="{style.iconPanel}">
                     <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="PIN_DROP" />
                     <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="ACCESS_TIME" />
                     <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="DELETE" />
