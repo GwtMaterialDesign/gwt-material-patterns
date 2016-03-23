@@ -53,3 +53,20 @@ This pattern is suitable for Document Management Systems.
 <img src="http://i.imgur.com/LkQo3Nb.gif" />
 #### Mobile View
 <img src="http://i.imgur.com/0MGLaYo.gif" />
+
+## Pattern #2
+### The Google Inbox v1.0 <a href="http://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot#google_inbox">Demo</a>
+This pattern is suitable for Email Systems.
+#### Material Components
+<ul>
+  <li> Fixed Navbar wit</li>
+  <li> Float Sidenav </li>
+  <li> Display all inbox into custom collapsible items with advance display</li>
+  <li> Added Horizontal Card child into Collapsible header </li>
+  <li> Added a hoverable icon panel on each item </li>
+</ul>
+#### Desktop / Tablet View
+<img src="http://i.imgur.com/AfK6QLK.gif" />
+#### Mobile View
+<img src="http://i.imgur.com/v1F2Ooy.gif" />
+
