@@ -1,15 +1,10 @@
 package com.github.gwtmaterialdesign.client.application;
 
-import javax.inject.Inject;
-
 import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.IsWidget;
-import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.ui.MaterialCutOut;
-import gwt.material.design.client.ui.MaterialSideNav;
+
+import javax.inject.Inject;
 
 public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
     interface Binder extends UiBinder<Widget, ApplicationView> {

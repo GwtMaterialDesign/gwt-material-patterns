@@ -2,9 +2,6 @@ package com.github.gwtmaterialdesign.client.dto;
 
 import gwt.material.design.client.constants.IconType;
 
-/**
- * Created by Mark Kevin on 3/3/2016.
- */
 public class DriveDTO {
 
     private IconType icon;

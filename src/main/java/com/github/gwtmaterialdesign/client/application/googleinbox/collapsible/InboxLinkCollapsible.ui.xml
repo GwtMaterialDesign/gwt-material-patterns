@@ -11,44 +11,42 @@
         }
     </ui:style>
     <m:MaterialCollapsibleItem addStyleNames="{style.colapsItem}">
-        <m:MaterialCollapsibleItem waves="DEFAULT">
-            <m:MaterialCollapsibleHeader>
-                <m:MaterialRow marginBottom="0">
-                    <m:MaterialColumn grid="l1 s2">
-                        <m:MaterialImage ui:field="imgUser" width="28px" circle="true" marginTop="12"/>
-                    </m:MaterialColumn>
-                    <m:MaterialLink ui:field="lblName" grid="l2" fontWeight="BOLD" truncate="true" />
+        <m:MaterialCollapsibleHeader>
+            <m:MaterialRow marginBottom="0">
+                <m:MaterialColumn grid="l1 s2">
+                    <m:MaterialImage ui:field="imgUser" width="28px" circle="true" marginTop="12"/>
+                </m:MaterialColumn>
+                <m:MaterialLink ui:field="lblName" grid="l2" fontWeight="BOLD" truncate="true" />
 
-                    <m:MaterialColumn grid="l8">
-                        <m:MaterialLabel ui:field="lblTitle" truncate="true" fontWeight="BOLD"/>
-                        <m:MaterialLabel ui:field="lblDescription" truncate="true" />
-                        <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
-                            <m:MaterialCardImage waves="LIGHT">
-                                <m:MaterialImage ui:field="imgLink"/>
-                            </m:MaterialCardImage>
+                <m:MaterialColumn grid="l8">
+                    <m:MaterialLabel ui:field="lblTitle" truncate="true" fontWeight="BOLD"/>
+                    <m:MaterialLabel ui:field="lblDescription" truncate="true" />
+                    <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+                        <m:MaterialCardImage waves="LIGHT">
+                            <m:MaterialImage ui:field="imgLink"/>
+                        </m:MaterialCardImage>
 
-                            <m:MaterialCardContent textColor="black">
-                                <m:MaterialLabel ui:field="lblLinkTitle" fontSize="1.5em" truncate="true"/>
-                                <m:MaterialLink ui:field="link" target="_blank" text="See it in action" iconType="LINK" textColor="red" truncate="true"/>
-                            </m:MaterialCardContent>
+                        <m:MaterialCardContent textColor="black">
+                            <m:MaterialLabel ui:field="lblLinkTitle" fontSize="1.5em" truncate="true"/>
+                            <m:MaterialLink ui:field="link" target="_blank" text="See it in action" iconType="LINK" textColor="red" truncate="true"/>
+                        </m:MaterialCardContent>
 
-                            <m:MaterialCardAction>
-                                <m:MaterialLink iconType="SHARE" textColor="black" />
-                                <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
-                            </m:MaterialCardAction>
-                        </m:MaterialCard>
-                    </m:MaterialColumn>
+                        <m:MaterialCardAction>
+                            <m:MaterialLink iconType="SHARE" textColor="black" />
+                            <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+                        </m:MaterialCardAction>
+                    </m:MaterialCard>
+                </m:MaterialColumn>
 
-                    <m:MaterialColumn grid="l4" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="white" opacity="0" addStyleNames="{style.iconPanel}">
-                        <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="PIN_DROP" />
-                        <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="ACCESS_TIME" />
-                        <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="DELETE" />
-                    </m:MaterialColumn>
-                </m:MaterialRow>
-            </m:MaterialCollapsibleHeader>
-            <m:MaterialCollapsibleBody ui:field="colapsBody">
-                <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="grey"/>
-            </m:MaterialCollapsibleBody>
-        </m:MaterialCollapsibleItem>
+                <m:MaterialColumn grid="l4" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="white" opacity="0" addStyleNames="{style.iconPanel}">
+                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="PIN_DROP" />
+                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="ACCESS_TIME" />
+                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="DELETE" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+        </m:MaterialCollapsibleHeader>
+        <m:MaterialCollapsibleBody ui:field="colapsBody">
+            <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="grey"/>
+        </m:MaterialCollapsibleBody>
     </m:MaterialCollapsibleItem>
 </ui:UiBinder>

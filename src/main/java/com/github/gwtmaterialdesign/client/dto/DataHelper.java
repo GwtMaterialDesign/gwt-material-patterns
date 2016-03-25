@@ -11,7 +11,7 @@ import java.util.List;
 public class DataHelper {
 
     /**
-     * Get all Users
+     * Get all Users for GContacts Pattern
      * @return
      */
     public static List<UserDTO> getAllUsers() {
@@ -30,6 +30,10 @@ public class DataHelper {
         return list;
     }
 
+    /**
+     * Get all drives for GDrive Pattern
+     * @return
+     */
     public static List<DriveDTO> getAllDrives() {
         List<DriveDTO> list = new ArrayList<>();
         list.add(new DriveDTO(IconType.FOLDER, "File 1", "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "Luis Hoppe", "March 3, 2016"));
@@ -45,6 +49,10 @@ public class DataHelper {
         return list;
     }
 
+    /**
+     * Get all inbox for GInbox Patter
+     * @return
+     */
     public static List<InboxDTO> getAllTodayInbox() {
         List<InboxDTO> list = new ArrayList<>();
 
@@ -73,6 +81,10 @@ public class DataHelper {
         return list;
     }
 
+    /**
+     * Get All yesterday inbox for GInbox Pattern
+     * @return
+     */
     public static List<InboxLinkDTO> getAllYesterdayInbox() {
         List<InboxLinkDTO> list = new ArrayList<>();
         list.add(new InboxLinkDTO("https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg", "Brandon", "Welcome to Google Cardboard", "Experience the awesome virtual reality using cardboard and your phone", "https://i.ytimg.com/vi/eT9vmpE8WcY/maxresdefault.jpg", "Google Cardboard", "https://www.google.com/get/cardboard/"));

@@ -1,6 +1,6 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:m="urn:import:gwt.material.design.client.ui"
->
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+
     <ui:style>
         @external .active;
         .colapsHeader.active{
@@ -8,6 +8,7 @@
         }
     </ui:style>
     <m:MaterialCollapsibleItem ui:field="colapsItem" waves="DEFAULT" width="100%" textColor="grey darken-1">
+        <!-- Header component for custome layouts -->
         <m:MaterialCollapsibleHeader addStyleNames="{style.colapsHeader}">
             <m:MaterialRow margin="0">
                 <m:MaterialColumn grid="l1 s2">

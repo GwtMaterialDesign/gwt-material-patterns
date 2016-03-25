@@ -6,9 +6,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Mark Kevin on 3/22/2016.
- */
 public class InboxDTO implements Serializable {
 
     private String imageUrl;

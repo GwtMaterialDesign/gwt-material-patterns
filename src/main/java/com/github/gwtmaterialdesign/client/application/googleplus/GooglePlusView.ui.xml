@@ -130,6 +130,7 @@
             <!-- Cards -->
             <m:MaterialLabel text="Featured Posts" marginLeft="12" fontSize="1em" textColor="grey"/>
             <m.addins:MaterialMasonry>
+                <!-- Post 1 -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>
@@ -169,7 +170,7 @@
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
-
+                <!-- Post 2 -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>
@@ -209,7 +210,7 @@
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
-
+                <!-- Post 3 -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>
@@ -249,7 +250,7 @@
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
-
+                <!-- Post 4 -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>
@@ -289,7 +290,7 @@
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
-
+                <!-- Post 5 -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
                         <m:MaterialCardContent>

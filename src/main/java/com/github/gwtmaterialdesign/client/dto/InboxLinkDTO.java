@@ -2,9 +2,6 @@ package com.github.gwtmaterialdesign.client.dto;
 
 import java.io.Serializable;
 
-/**
- * Created by Mark Kevin on 3/22/2016.
- */
 public class InboxLinkDTO implements Serializable {
 
     private String imgUser;

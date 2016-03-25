@@ -1,16 +1,13 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:m="urn:import:gwt.material.design.client.ui"
->
+             xmlns:m="urn:import:gwt.material.design.client.ui">
     <ui:style>
         @external .active, .collapsible-header;
-        .colapsHeader.active{
-            background: #e0e0e0;
-        }
         .colapsItem .collapsible-header:hover .iconPanel{
             opacity: 1 !important;
         }
     </ui:style>
     <m:MaterialCollapsibleItem ui:field="colapsItem" waves="DEFAULT" addStyleNames="{style.colapsItem}">
+        <!-- Header component with custom layout -->
         <m:MaterialCollapsibleHeader>
             <m:MaterialRow marginBottom="0">
                 <m:MaterialColumn ui:field="imgCol" grid="l1 m2 s2">
@@ -25,6 +22,7 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
         </m:MaterialCollapsibleHeader>
+        <!-- Body component with just albel info -->
         <m:MaterialCollapsibleBody ui:field="colapsBody">
             <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="grey"/>
         </m:MaterialCollapsibleBody>

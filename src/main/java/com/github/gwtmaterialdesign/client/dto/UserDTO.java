@@ -2,9 +2,6 @@ package com.github.gwtmaterialdesign.client.dto;
 
 import java.io.Serializable;
 
-/**
- * Created by Mark Kevin on 1/13/2016.
- */
 public class UserDTO implements Serializable {
 
     public enum Position {

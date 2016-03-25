@@ -8,7 +8,7 @@
     <extend-configuration-property name="gin.ginjector.modules"
                                    value="com.github.gwtmaterialdesign.client.gin.ClientModule"/>
 
-    <!-- Specify the paths for translatable code                    -->
+    <!-- Specify the paths for translatable code -->
     <source path='client'/>
     <source path='shared'/>
 

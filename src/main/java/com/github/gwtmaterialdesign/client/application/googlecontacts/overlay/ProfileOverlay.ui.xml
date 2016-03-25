@@ -2,11 +2,7 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui">
     <ui:style>
-        .colaps{
-            box-shadow: none !important;
-            -webkit-box-shadow: none !important;
-            -moz-box-shadow: none !important;
-        }
+
     </ui:style>
     <m.addins:MaterialOverlay ui:field="overlay" visibility="HIDDEN" opacity="0" overflow="AUTO" backgroundColor="grey lighten-4">
         <m:MaterialIcon ui:field="btnCloseProfile" fontSize="2.5em" iconType="CLOSE" layoutPosition="FIXED" right="20" top="20"/>
