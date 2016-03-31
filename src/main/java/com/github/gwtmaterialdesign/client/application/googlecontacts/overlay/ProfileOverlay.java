@@ -9,8 +9,8 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
-import gwt.material.design.addins.client.ui.MaterialOverlay;
-import gwt.material.design.addins.client.ui.MaterialPathAnimator;
+import gwt.material.design.addins.client.overlay.MaterialOverlay;
+import gwt.material.design.addins.client.pathanimator.MaterialPathAnimator;
 import gwt.material.design.client.ui.*;
 
 public class ProfileOverlay extends Composite {

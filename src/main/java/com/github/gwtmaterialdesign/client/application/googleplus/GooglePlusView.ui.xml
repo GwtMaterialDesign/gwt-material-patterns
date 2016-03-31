@@ -1,6 +1,6 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:m='urn:import:gwt.material.design.client.ui'
-             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui">
+             xmlns:ma="urn:import:gwt.material.design.addins.client">
 
     <ui:with field="res" type="com.github.gwtmaterialdesign.client.resources.AppResources"/>
     <ui:style>
@@ -129,7 +129,7 @@
 
             <!-- Cards -->
             <m:MaterialLabel text="Featured Posts" marginLeft="12" fontSize="1em" textColor="grey"/>
-            <m.addins:MaterialMasonry>
+            <ma:masonry.MaterialMasonry>
                 <!-- Post 1 -->
                 <m:MaterialColumn grid="l6 m6 s12">
                     <m:MaterialCard>
@@ -330,7 +330,7 @@
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
-            </m.addins:MaterialMasonry>
+            </ma:masonry.MaterialMasonry>
         </m:MaterialContainer>
 
         <!-- FAB -->

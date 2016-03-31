@@ -1,10 +1,10 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui">
+             xmlns:ma="urn:import:gwt.material.design.addins.client">
     <ui:style>
 
     </ui:style>
-    <m.addins:MaterialOverlay ui:field="overlay" visibility="HIDDEN" opacity="0" overflow="AUTO" backgroundColor="grey lighten-4">
+    <ma:overlay.MaterialOverlay ui:field="overlay" visibility="HIDDEN" opacity="0" overflow="AUTO" backgroundColor="grey lighten-4">
         <m:MaterialIcon ui:field="btnCloseProfile" fontSize="2.5em" iconType="CLOSE" layoutPosition="FIXED" right="20" top="20"/>
         <m:MaterialRow width="80%" paddingTop="40">
             <m:MaterialColumn grid="l4 s12 m12" textAlign="CENTER">
@@ -60,5 +60,5 @@
                 </m:MaterialCard>
             </m:MaterialColumn>
         </m:MaterialRow>
-    </m.addins:MaterialOverlay>
+    </ma:overlay.MaterialOverlay>
 </ui:UiBinder>
