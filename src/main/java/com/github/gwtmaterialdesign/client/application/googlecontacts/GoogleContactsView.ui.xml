@@ -50,9 +50,9 @@
                 <m:MaterialLabel text="Mark Kevin Baldemor" fontWeight="BOLD"  marginTop="8" grid="l9 m9 s9"/>
             </m:MaterialRow>
             <m:MaterialLink iconType="CONTACTS" text="All Contacts" />
-            <m:MaterialLink iconType="PERM_CONTACT_CAL" text="Frequently Contacted" />
+            <m:MaterialLink iconType="PERM_CONTACT_CALENDAR" text="Frequently Contacted" />
             <m:MaterialLink iconType="GROUP" text="Groups" />
-            <m:MaterialLink iconType="RADIO_BUTTON_ON" text="Circles" />
+            <m:MaterialLink iconType="RADIO_BUTTON_CHECKED" text="Circles" />
             <m:MaterialLink iconType="FIND_IN_PAGE" text="Find Duplicates" />
             <m:MaterialLink iconType="MORE" text="More" />
         </m:MaterialSideNav>

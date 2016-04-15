@@ -15,8 +15,8 @@
                 <m:MaterialLabel ui:field="lblPosition" truncate="true" hideOn="HIDE_ON_SMALL" fontSize="0.8em" grid="l3 s4" marginTop="12"/>
                 <m:MaterialColumn grid="l3 s4" marginTop="12">
                     <m:MaterialIcon iconType="CALL" iconColor="blue darken-2" float="RIGHT" margin="0"/>
-                    <m:MaterialIcon iconType="RADIO_BUTTON_ON" iconColor="red darken-2" float="RIGHT" margin="0"/>
-                    <m:MaterialIcon ui:field="iconStar" iconType="STAR_OUTLINE" iconColor="amber darken-2" float="RIGHT" margin="0"/>
+                    <m:MaterialIcon iconType="RADIO_BUTTON_CHECKED" iconColor="red darken-2" float="RIGHT" margin="0"/>
+                    <m:MaterialIcon ui:field="iconStar" iconType="STAR_BORDER" iconColor="amber darken-2" float="RIGHT" margin="0"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
         </m:MaterialCollapsibleHeader>
