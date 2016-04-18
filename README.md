@@ -2,6 +2,17 @@
 ##gwt-material-patterns [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-patterns.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-patterns)
 <p>A pattern layouts to build gwt-material applications rapidly</p>
 
+## Maven Import
+``` xml
+
+<dependency>
+    <groupId>com.github.gwtmaterialdesign</groupId>
+    <artifactId>gwt-material-patterns</artifactId>
+    <version>1.0</version>
+</dependency>
+
+```
+
 ## Pattern # 1 
 ### The Google Plus v1.0 <a href="http://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot/#google_plus">Demo</a> 
 This pattern is suitable for Social  Network apps to provide a collection of posts displayed in cards.
