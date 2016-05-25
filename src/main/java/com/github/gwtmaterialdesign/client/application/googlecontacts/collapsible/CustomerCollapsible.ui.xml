@@ -23,7 +23,7 @@
     <ui:style>
 
     </ui:style>
-    <m:MaterialCollapsibleItem ui:field="colapsItem" waves="DEFAULT" width="100%">
+    <m:MaterialCollapsibleItem ui:field="colapsItem"  waves="DEFAULT" width="100%">
         <m:MaterialCollapsibleHeader >
             <m:MaterialRow margin="0">
                 <m:MaterialColumn grid="l1 s2">

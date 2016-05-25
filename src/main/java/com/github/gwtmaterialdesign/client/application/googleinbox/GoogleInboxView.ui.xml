@@ -52,7 +52,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNav m:id="sidenav" width="250" type="FLOAT" layoutPosition="FIXED">
+        <m:MaterialSideNav m:id="sidenav" width="250" type="FIXED" layoutPosition="FIXED">
             <m:MaterialLink text="Inbox" iconType="INBOX" iconColor="blue" textColor="grey darken-2"/>
             <m:MaterialLink text="Snoozed" iconType="ACCESS_TIME" iconColor="orange" textColor="grey darken-2"/>
             <m:MaterialLink text="Done" separator="true" iconType="CHECK" iconColor="green" textColor="grey darken-2"/>
