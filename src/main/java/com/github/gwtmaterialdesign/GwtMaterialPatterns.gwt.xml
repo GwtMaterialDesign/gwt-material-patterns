@@ -35,7 +35,7 @@
     <!--GWT Material-->
     <inherits name="gwt.material.design.GwtMaterialBasicWithJQueryDebug"/>
     <inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/>
-    <inherits name="gwt.material.design.addins.GWTMaterialAddins"/>
+    <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
 
     <set-configuration-property name="CssResource.enableGss" value="true"/>
 </module>

@@ -65,7 +65,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" type="FIXED" shadow="0" backgroundColor="white" top="120">
+        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" alwaysShowActivator="true" showOnAttach="true" type="FIXED" shadow="0" backgroundColor="white" top="120">
             <m:MaterialLink text="Home" iconType="HOME" textColor="grey darken-2"/>
             <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="grey darken-2"/>
             <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="grey darken-2"/>

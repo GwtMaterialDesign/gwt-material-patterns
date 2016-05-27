@@ -24,7 +24,7 @@
     <ui:style>
         @external side-nav, active;
         body{
-            background-color: #F9F6F6;
+            background-color: #fafafa;
             overflow: scroll !important;
         }
         .side-nav li.active{
@@ -52,7 +52,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNav m:id="sidenav" width="250" type="FIXED" layoutPosition="FIXED">
+        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" alwaysShowActivator="true" showOnAttach="true" type="FIXED" shadow="0" backgroundColor="grey lighten-5" top="70">
             <m:MaterialLink text="Inbox" iconType="INBOX" iconColor="blue" textColor="grey darken-2"/>
             <m:MaterialLink text="Snoozed" iconType="ACCESS_TIME" iconColor="orange" textColor="grey darken-2"/>
             <m:MaterialLink text="Done" separator="true" iconType="CHECK" iconColor="green" textColor="grey darken-2"/>

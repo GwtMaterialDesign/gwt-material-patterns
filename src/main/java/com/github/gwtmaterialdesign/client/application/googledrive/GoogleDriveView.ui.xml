@@ -83,7 +83,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialSideNav m:id="sidenav" overflow="AUTO" type="FIXED" shadow="0" backgroundColor="grey lighten-3" top="68">
+        <m:MaterialSideNav m:id="sidenav" overflow="AUTO" type="FIXED" showOnAttach="true" alwaysShowActivator="true" shadow="0" backgroundColor="grey lighten-3" top="70">
             <m:MaterialLink iconType="FOLDER" text="My Drive"/>
             <m:MaterialLink iconType="GROUP" text="Shared with me"/>
             <m:MaterialLink iconType="CAMERA" text="Google Photos"/>
