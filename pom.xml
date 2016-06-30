@@ -4,12 +4,12 @@
     <parent>
         <artifactId>gwt-material-parent</artifactId>
         <groupId>com.github.gwtmaterialdesign</groupId>
-        <version>1.5.1</version>
+        <version>1.5.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gwt-material-patterns</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
 
     <packaging>war</packaging>
     <name>GWTP Patterns</name>
@@ -19,7 +19,7 @@
         <gwt.version>2.7.0</gwt.version>
         <gwtp.version>1.5.3</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>1.5.1</gwt-material.version>
+        <gwt-material.version>1.5.2</gwt-material.version>
         <gwt.style>OBF</gwt.style>
 
         <!-- maven -->
