@@ -8,7 +8,7 @@
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-patterns</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
 </dependency>
 
 ```
