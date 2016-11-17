@@ -36,7 +36,7 @@
     </ui:style>
     <m:MaterialPanel>
         <!-- Splash screen -->
-        <m:MaterialSplashScreen ui:field="splash" backgroundColor="white" depth="1000" textAlign="CENTER">
+        <m:MaterialSplashScreen ui:field="splash" backgroundColor="WHITE" depth="1000" textAlign="CENTER">
             <m:MaterialImage width="300px" marginTop="-100" url="http://assets.materialup.com/uploads/f1541fbb-6616-4dff-89c1-724371c40a42/contacts.gif" />
             <m:MaterialLabel text="Pattern #2" fontSize="2em" fontWeight="LIGHTER"/>
             <m:MaterialLabel text="Contacts Pattern for User Management" />
@@ -44,20 +44,20 @@
         <!-- Header Section -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" depth="996" top="0">
             <!-- NavBar Component -->
-            <m:MaterialNavBar ui:field="appNav" backgroundColor="blue darken-1" activates="sidenav">
+            <m:MaterialNavBar ui:field="appNav" backgroundColor="BLUE_DARKEN_1" activates="sidenav">
                 <m:MaterialNavBrand text="Contacts" />
                 <m:MaterialNavSection float="RIGHT" hideOn="NONE">
                     <m:MaterialIcon hideOn="HIDE_ON_SMALL_DOWN" activates="dpSort" iconType="SORT_BY_ALPHA" marginRight="20" />
                     <m:MaterialIcon hideOn="HIDE_ON_SMALL_DOWN" iconType="CALL" marginRight="20" />
                     <m:MaterialIcon ui:field="btnSearch" iconType="SEARCH" marginRight="20" />
                     <m:MaterialDropDown activator="dpSort" width="250" belowOrigin="true" constrainWidth="false">
-                        <m:MaterialLink ui:field="sortName" text="Full Name" textColor="grey darken-1"/>
-                        <m:MaterialLink ui:field="sortPosition" text="Position" textColor="grey darken-1"/>
+                        <m:MaterialLink ui:field="sortName" text="Full Name" textColor="GREY_DARKEN_1"/>
+                        <m:MaterialLink ui:field="sortPosition" text="Position" textColor="GREY_DARKEN_1"/>
                     </m:MaterialDropDown>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
             <!-- Search Component -->
-            <m:MaterialNavBar ui:field="searchNav" backgroundColor="white" visible="false">
+            <m:MaterialNavBar ui:field="searchNav" backgroundColor="WHITE" visible="false">
                 <m:MaterialSearch ui:field="search" placeholder="Search Contact" active="true"/>
             </m:MaterialNavBar>
         </m:MaterialHeader>
@@ -78,18 +78,18 @@
 
         <!-- Container -->
         <m:MaterialContainer paddingLeft="320" paddingRight="140" marginTop="80">
-            <m:MaterialLabel text="Starred" marginTop="32" marginLeft="24" textColor="grey"/>
+            <m:MaterialLabel text="Starred" marginTop="32" marginLeft="24" textColor="GREY"/>
             <!-- Collapsible Starred -->
             <m:MaterialCollapsible ui:field="starredColaps"/>
 
             <!-- Collapsible Frequent Contacts -->
-            <m:MaterialLabel text="Frequently Contacted" marginTop="32" marginLeft="24" textColor="grey"/>
+            <m:MaterialLabel text="Frequently Contacted" marginTop="32" marginLeft="24" textColor="GREY"/>
             <m:MaterialCollapsible ui:field="frequentColaps"/>
         </m:MaterialContainer>
 
         <!-- FAB -->
         <m:MaterialFAB>
-            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googlecontacts" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="blue" size="LARGE"/>
+            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googlecontacts" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="BLUE" size="LARGE"/>
         </m:MaterialFAB>
 
         <!-- Profile Overlay -->

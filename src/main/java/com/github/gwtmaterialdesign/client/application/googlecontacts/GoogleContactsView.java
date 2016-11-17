@@ -44,6 +44,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class GoogleContactsView extends ViewImpl implements GoogleContactsPresenter.MyView {
@@ -79,24 +80,13 @@ public class GoogleContactsView extends ViewImpl implements GoogleContactsPresen
             }
         };
         t.schedule(5000);
-        search.addCloseHandler(new CloseHandler<String>() {
-            @Override
-            public void onClose(CloseEvent<String> event) {
-                appNav.setVisible(true);
-                searchNav.setVisible(false);
-            }
+        search.addCloseHandler(event -> {
+            appNav.setVisible(true);
+            searchNav.setVisible(false);
         });
-        search.addKeyUpHandler(new KeyUpHandler() {
-            @Override
-            public void onKeyUp(KeyUpEvent event) {
-                List<UserDTO> filteredUser = new ArrayList<>();
-                for(UserDTO dto : DataHelper.getAllUsers()) {
-                    if(dto.getName().toLowerCase().contains(search.getText().toLowerCase())){
-                        filteredUser.add(dto);
-                    }
-                }
-                populateUsers(filteredUser);
-            }
+        search.addKeyUpHandler(event -> {
+            List<UserDTO> filteredUser = DataHelper.getAllUsers().stream().filter(dto -> dto.getName().toLowerCase().contains(search.getText().toLowerCase())).collect(Collectors.toList());
+            populateUsers(filteredUser);
         });
         populateUsers(DataHelper.getAllUsers());
     }
@@ -108,11 +98,9 @@ public class GoogleContactsView extends ViewImpl implements GoogleContactsPresen
     private void populateUsers(List<UserDTO> allUsers) {
         starredColaps.clear();
         frequentColaps.clear();
-        for(UserDTO dto : allUsers) {
-            if(dto.isStarred()) {
-                starredColaps.add(new CustomerCollapsible(dto, this));
-            }
-        }
+        allUsers.stream().filter(UserDTO::isStarred).forEach(dto -> {
+            starredColaps.add(new CustomerCollapsible(dto, this));
+        });
         for(UserDTO dto : allUsers) {
             frequentColaps.add(new CustomerCollapsible(dto, this));
         }
@@ -127,24 +115,14 @@ public class GoogleContactsView extends ViewImpl implements GoogleContactsPresen
     @UiHandler("sortName")
     void onSortFirst(ClickEvent e) {
         List<UserDTO> sortedUsers = DataHelper.getAllUsers();
-        Collections.sort(sortedUsers, new Comparator<UserDTO>() {
-            @Override
-            public int compare(UserDTO o1, UserDTO o2) {
-                return o1.getName().compareToIgnoreCase(o2.getName());
-            }
-        });
+        Collections.sort(sortedUsers, (o1, o2) -> o1.getName().compareToIgnoreCase(o2.getName()));
         populateUsers(sortedUsers);
     }
 
     @UiHandler("sortPosition")
     void onSortPosition(ClickEvent e) {
         List<UserDTO> sortedUsers = DataHelper.getAllUsers();
-        Collections.sort(sortedUsers, new Comparator<UserDTO>() {
-            @Override
-            public int compare(UserDTO o1, UserDTO o2) {
-                return o1.getPosition().getValue().compareToIgnoreCase(o2.getPosition().getValue());
-            }
-        });
+        Collections.sort(sortedUsers, (o1, o2) -> o1.getPosition().getValue().compareToIgnoreCase(o2.getPosition().getValue()));
         populateUsers(sortedUsers);
     }
 

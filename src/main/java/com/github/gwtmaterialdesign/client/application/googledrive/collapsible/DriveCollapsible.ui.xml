@@ -26,7 +26,7 @@
             background: #e0e0e0;
         }
     </ui:style>
-    <m:MaterialCollapsibleItem ui:field="colapsItem" waves="DEFAULT" width="100%" textColor="grey darken-1">
+    <m:MaterialCollapsibleItem ui:field="colapsItem" waves="DEFAULT" width="100%" textColor="GREY_DARKEN_1">
         <!-- Header component for custome layouts -->
         <m:MaterialCollapsibleHeader addStyleNames="{style.colapsHeader}">
             <m:MaterialRow margin="0">

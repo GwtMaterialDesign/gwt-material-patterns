@@ -34,16 +34,16 @@
                 </m:MaterialColumn>
                 <m:MaterialLink ui:field="lblCategory" grid="l4" fontWeight="BOLD" truncate="true" />
                 <m:MaterialLabel ui:field="lblDescription" grid="l6 m6 s6" truncate="true" />
-                <m:MaterialColumn grid="l4 m4 s8" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="white" opacity="0" addStyleNames="{style.iconPanel}">
-                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="PIN_DROP" />
-                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="ACCESS_TIME" />
-                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="DELETE" />
+                <m:MaterialColumn grid="l4 m4 s8" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="WHITE" opacity="0" addStyleNames="{style.iconPanel}">
+                    <m:MaterialIcon float="RIGHT" iconColor="GREY_DARKEN_2" iconType="PIN_DROP" />
+                    <m:MaterialIcon float="RIGHT" iconColor="GREY_DARKEN_2" iconType="ACCESS_TIME" />
+                    <m:MaterialIcon float="RIGHT" iconColor="GREY_DARKEN_2" iconType="DELETE" />
                 </m:MaterialColumn>
             </m:MaterialRow>
         </m:MaterialCollapsibleHeader>
         <!-- Body component with just albel info -->
         <m:MaterialCollapsibleBody ui:field="colapsBody">
-            <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="grey"/>
+            <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="GREY"/>
         </m:MaterialCollapsibleBody>
     </m:MaterialCollapsibleItem>
 </ui:UiBinder>

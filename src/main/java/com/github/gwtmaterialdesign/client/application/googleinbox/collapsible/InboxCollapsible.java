@@ -31,6 +31,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.*;
 
 public class InboxCollapsible extends Composite {
@@ -58,7 +59,7 @@ public class InboxCollapsible extends Composite {
     public InboxCollapsible(InboxDTO dto) {
         initWidget(uiBinder.createAndBindUi(this));
         lblCategory.setText(dto.getCategory());
-        lblCategory.setTextColor(dto.getColor());
+        lblCategory.setTextColor(Color.fromStyleName(dto.getColor()));
         if(dto.getIconType() != null) {
             lblCategory.setIconType(dto.getIconType());
             imgCol.removeFromParent();
