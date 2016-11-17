@@ -40,32 +40,27 @@
                 <m:MaterialColumn grid="l8">
                     <m:MaterialLabel ui:field="lblTitle" truncate="true" fontWeight="BOLD"/>
                     <m:MaterialLabel ui:field="lblDescription" truncate="true" />
-                    <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+                    <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
                         <m:MaterialCardImage waves="LIGHT">
                             <m:MaterialImage ui:field="imgLink"/>
                         </m:MaterialCardImage>
 
-                        <m:MaterialCardContent textColor="black">
+                        <m:MaterialCardContent textColor="BLACK">
                             <m:MaterialLabel ui:field="lblLinkTitle" fontSize="1.5em" truncate="true"/>
-                            <m:MaterialLink ui:field="link" target="_blank" text="See it in action" iconType="LINK" textColor="red" truncate="true"/>
+                            <m:MaterialLink ui:field="link" target="_blank" text="See it in action" iconType="LINK" textColor="RED" truncate="true"/>
                         </m:MaterialCardContent>
-
-                        <m:MaterialCardAction>
-                            <m:MaterialLink iconType="SHARE" textColor="black" />
-                            <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
-                        </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
 
-                <m:MaterialColumn grid="l4" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="white" opacity="0" addStyleNames="{style.iconPanel}">
-                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="PIN_DROP" />
-                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="ACCESS_TIME" />
-                    <m:MaterialIcon float="RIGHT" iconColor="grey darken-2" iconType="DELETE" />
+                <m:MaterialColumn grid="l4" layoutPosition="ABSOLUTE" top="0" right="0" backgroundColor="WHITE" opacity="0" addStyleNames="{style.iconPanel}">
+                    <m:MaterialIcon float="RIGHT" iconColor="GREY_DARKEN_2" iconType="PIN_DROP" />
+                    <m:MaterialIcon float="RIGHT" iconColor="GREY_DARKEN_2" iconType="ACCESS_TIME" />
+                    <m:MaterialIcon float="RIGHT" iconColor="GREY_DARKEN_2" iconType="DELETE" />
                 </m:MaterialColumn>
             </m:MaterialRow>
         </m:MaterialCollapsibleHeader>
         <m:MaterialCollapsibleBody ui:field="colapsBody">
-            <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="grey"/>
+            <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="GREY"/>
         </m:MaterialCollapsibleBody>
     </m:MaterialCollapsibleItem>
 </ui:UiBinder>

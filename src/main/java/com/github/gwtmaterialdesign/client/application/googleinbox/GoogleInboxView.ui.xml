@@ -33,7 +33,7 @@
     </ui:style>
     <m:MaterialPanel>
         <!-- Splash screen -->
-        <m:MaterialSplashScreen ui:field="splash" backgroundColor="white" depth="1000" textAlign="CENTER">
+        <m:MaterialSplashScreen ui:field="splash" backgroundColor="WHITE" depth="1000" textAlign="CENTER">
             <m:MaterialImage width="280px" url="http://assets.materialup.com/uploads/6fa4e746-4269-4900-98bf-0c102f5bf7c8/inbox.gif" />
             <m:MaterialLabel text="Pattern #4" fontSize="2em" fontWeight="LIGHTER"/>
             <m:MaterialLabel text="Inbox Pattern for Email" />
@@ -41,41 +41,41 @@
         <!-- Header -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" depth="996" top="0" >
             <!-- NavBar -->
-            <m:MaterialNavBar backgroundColor="blue" activates="sidenav">
+            <m:MaterialNavBar backgroundColor="BLUE" activates="sidenav">
                 <m:MaterialNavBrand text="Google Inbox" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="APPS" />
                     <m:MaterialLink iconType="NOTIFICATIONS" />
-                    <m:MaterialImage circle="true" width="40px" height="40px" marginTop="12" marginRight="12" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" backgroundColor="white" />
+                    <m:MaterialImage circle="true" width="40px" height="40px" marginTop="12" marginRight="12" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" backgroundColor="WHITE" />
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" alwaysShowActivator="true" showOnAttach="true" type="FIXED" shadow="0" backgroundColor="grey lighten-5" top="70">
-            <m:MaterialLink text="Inbox" iconType="INBOX" iconColor="blue" textColor="grey darken-2"/>
-            <m:MaterialLink text="Snoozed" iconType="ACCESS_TIME" iconColor="orange" textColor="grey darken-2"/>
-            <m:MaterialLink text="Done" separator="true" iconType="CHECK" iconColor="green" textColor="grey darken-2"/>
-            <m:MaterialLink text="Drafts" iconType="DRAFTS" textColor="grey darken-2"/>
-            <m:MaterialLink text="Sent" iconType="SEND" textColor="grey darken-2"/>
-            <m:MaterialLink text="Reminders" iconType="TOUCH_APP" textColor="grey darken-2"/>
-            <m:MaterialLink text="Trash" iconType="DELETE" textColor="grey darken-2"/>
-            <m:MaterialLink text="Spam" iconType="REPORT" textColor="grey darken-2"/>
-            <m:MaterialLink text="Contacts" iconType="CONTACTS" textColor="grey darken-2"/>
-            <m:MaterialLink text="Gmail" iconType="MAIL" textColor="grey darken-2"/>
+        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" alwaysShowActivator="true" showOnAttach="true" type="FIXED" shadow="0" backgroundColor="GREY_LIGHTEN_5" top="70">
+            <m:MaterialLink text="Inbox" iconType="INBOX" iconColor="BLUE" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Snoozed" iconType="ACCESS_TIME" iconColor="ORANGE" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Done" separator="true" iconType="CHECK" iconColor="GREEN" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Drafts" iconType="DRAFTS" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Sent" iconType="SEND" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Reminders" iconType="TOUCH_APP" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Trash" iconType="DELETE" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Spam" iconType="REPORT" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Contacts" iconType="CONTACTS" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Gmail" iconType="MAIL" textColor="GREY_DARKEN_2"/>
         </m:MaterialSideNav>
 
         <!-- Container -->
         <m:MaterialContainer paddingLeft="330" paddingRight="100" marginTop="80">
-            <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="grey"/>
+            <m:MaterialLabel text="Today" marginTop="32" marginLeft="24" textColor="GREY"/>
             <m:MaterialCollapsible ui:field="inboxColaps" />
-            <m:MaterialLabel text="Yesterday" marginTop="32" marginLeft="24" textColor="grey"/>
+            <m:MaterialLabel text="Yesterday" marginTop="32" marginLeft="24" textColor="GREY"/>
             <m:MaterialCollapsible ui:field="inboxLinkColaps" />
         </m:MaterialContainer>
 
         <!-- FAB -->
         <m:MaterialFAB>
-            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googleinbox" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="red" size="LARGE"/>
+            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googleinbox" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="RED" size="LARGE"/>
         </m:MaterialFAB>
     </m:MaterialPanel>
 </ui:UiBinder>

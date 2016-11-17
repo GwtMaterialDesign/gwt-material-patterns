@@ -42,6 +42,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.MyView {
@@ -85,24 +86,13 @@ public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.My
             }
         };
         t.schedule(5000);
-        search.addCloseHandler(new CloseHandler<String>() {
-            @Override
-            public void onClose(CloseEvent<String> event) {
-                appNav.setVisible(true);
-                searchNav.setVisible(false);
-            }
+        search.addCloseHandler(event -> {
+            appNav.setVisible(true);
+            searchNav.setVisible(false);
         });
-        search.addKeyUpHandler(new KeyUpHandler() {
-            @Override
-            public void onKeyUp(KeyUpEvent event) {
-                List<DriveDTO> filteredFiles = new ArrayList<>();
-                for(DriveDTO dto : DataHelper.getAllDrives()) {
-                    if(dto.getFileName().toLowerCase().contains(search.getText().toLowerCase())){
-                        filteredFiles.add(dto);
-                    }
-                }
-                populateFiles(filteredFiles);
-            }
+        search.addKeyUpHandler(event -> {
+            List<DriveDTO> filteredFiles = DataHelper.getAllDrives().stream().filter(dto -> dto.getFileName().toLowerCase().contains(search.getText().toLowerCase())).collect(Collectors.toList());
+            populateFiles(filteredFiles);
         });
         populateFiles(DataHelper.getAllDrives());
     }
@@ -147,36 +137,21 @@ public class GoogleDriveView extends ViewImpl implements GoogleDrivePresenter.My
     @UiHandler("sortFileName")
     void onSortFileName(ClickEvent e) {
         List<DriveDTO> sortedFiles = DataHelper.getAllDrives();
-        Collections.sort(sortedFiles, new Comparator<DriveDTO>() {
-            @Override
-            public int compare(DriveDTO o1, DriveDTO o2) {
-                return o1.getFileName().compareToIgnoreCase(o2.getFileName());
-            }
-        });
+        Collections.sort(sortedFiles, (o1, o2) -> o1.getFileName().compareToIgnoreCase(o2.getFileName()));
         populateFiles(sortedFiles);
     }
 
     @UiHandler("sortSharedBy")
     void onSortSharedBy(ClickEvent e) {
         List<DriveDTO> sortedFiles = DataHelper.getAllDrives();
-        Collections.sort(sortedFiles, new Comparator<DriveDTO>() {
-            @Override
-            public int compare(DriveDTO o1, DriveDTO o2) {
-                return o1.getOwner().compareToIgnoreCase(o2.getOwner());
-            }
-        });
+        Collections.sort(sortedFiles, (o1, o2) -> o1.getOwner().compareToIgnoreCase(o2.getOwner()));
         populateFiles(sortedFiles);
     }
 
     @UiHandler("sortSharedDate")
     void onSortSharedDate(ClickEvent e) {
         List<DriveDTO> sortedFiles = DataHelper.getAllDrives();
-        Collections.sort(sortedFiles, new Comparator<DriveDTO>() {
-            @Override
-            public int compare(DriveDTO o1, DriveDTO o2) {
-                return o1.getDate().compareToIgnoreCase(o2.getDate());
-            }
-        });
+        Collections.sort(sortedFiles, (o1, o2) -> o1.getDate().compareToIgnoreCase(o2.getDate()));
         populateFiles(sortedFiles);
     }
 

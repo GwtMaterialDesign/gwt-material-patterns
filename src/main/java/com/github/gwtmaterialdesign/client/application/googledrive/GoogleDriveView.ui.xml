@@ -42,7 +42,7 @@
     </ui:style>
     <m:MaterialPanel>
         <!-- Splash screen -->
-        <m:MaterialSplashScreen ui:field="splash" backgroundColor="white" depth="1000" textAlign="CENTER">
+        <m:MaterialSplashScreen ui:field="splash" backgroundColor="WHITE" depth="1000" textAlign="CENTER">
             <m:MaterialImage width="150px" url="http://www.sketchappsources.com/resources/source-image/googledrive_logo.png" />
             <m:MaterialLabel text="Pattern #3" fontSize="2em" fontWeight="LIGHTER"/>
             <m:MaterialLabel text="GDrive Pattern for Document Management" />
@@ -51,24 +51,24 @@
         <!-- Header Section -->
         <m:MaterialHeader depth="996" layoutPosition="FIXED" width="100%">
             <!-- NavBar Component -->
-            <m:MaterialNavBar ui:field="appNav" backgroundColor="grey darken-1" activates="sidenav">
+            <m:MaterialNavBar ui:field="appNav" backgroundColor="GREY_DARKEN_1" activates="sidenav">
                 <m:MaterialNavBrand text="Drive"/>
 
                 <m:MaterialNavSection float="RIGHT" hideOn="NONE">
-                    <m:MaterialLink hideOn="HIDE_ON_SMALL_DOWN" text="Drive" iconPosition="RIGHT" marginRight="20" iconType="ARROW_DROP_DOWN" textColor="white" activates="dpDrive" float="LEFT">
+                    <m:MaterialLink hideOn="HIDE_ON_SMALL_DOWN" text="Drive" iconPosition="RIGHT" marginRight="20" iconType="ARROW_DROP_DOWN" textColor="WHITE" activates="dpDrive" float="LEFT">
                         <m:MaterialDropDown activator="dpDrive" width="200px" belowOrigin="true" constrainWidth="false">
-                            <m:MaterialLink text="Link 1" iconType="FOLDER" textColor="grey darken-1"/>
-                            <m:MaterialLink text="Link 1" iconType="FOLDER_SHARED" textColor="grey darken-1"/>
-                            <m:MaterialLink text="Link 1" iconType="FOLDER_SPECIAL" textColor="grey darken-1"/>
-                            <m:MaterialLink text="Link 1" iconType="FOLDER_OPEN" textColor="grey darken-1"/>
+                            <m:MaterialLink text="Link 1" iconType="FOLDER" textColor="GREY_DARKEN_1"/>
+                            <m:MaterialLink text="Link 1" iconType="FOLDER_SHARED" textColor="GREY_DARKEN_1"/>
+                            <m:MaterialLink text="Link 1" iconType="FOLDER_SPECIAL" textColor="GREY_DARKEN_1"/>
+                            <m:MaterialLink text="Link 1" iconType="FOLDER_OPEN" textColor="GREY_DARKEN_1"/>
                         </m:MaterialDropDown>
                     </m:MaterialLink>
                     <m:MaterialLink ui:field="btnSearch" iconPosition="NONE" iconType="SEARCH"/>
-                    <m:MaterialLink hideOn="HIDE_ON_SMALL_DOWN" iconType="SORT_BY_ALPHA" iconPosition="NONE" activates="dpSort"  textColor="white" float="LEFT">
+                    <m:MaterialLink hideOn="HIDE_ON_SMALL_DOWN" iconType="SORT_BY_ALPHA" iconPosition="NONE" activates="dpSort"  textColor="WHITE" float="LEFT">
                         <m:MaterialDropDown activator="dpSort" width="200px" belowOrigin="true" constrainWidth="false">
-                            <m:MaterialLink ui:field="sortFileName" text="File Name" textColor="grey darken-1"/>
-                            <m:MaterialLink ui:field="sortSharedBy" text="Shared by" textColor="grey darken-1"/>
-                            <m:MaterialLink ui:field="sortSharedDate" text="Shared date" textColor="grey darken-1"/>
+                            <m:MaterialLink ui:field="sortFileName" text="File Name" textColor="GREY_DARKEN_1"/>
+                            <m:MaterialLink ui:field="sortSharedBy" text="Shared by" textColor="GREY_DARKEN_1"/>
+                            <m:MaterialLink ui:field="sortSharedDate" text="Shared date" textColor="GREY_DARKEN_1"/>
                         </m:MaterialDropDown>
                     </m:MaterialLink>
                     <m:MaterialLink ui:field="iconInfo" iconPosition="NONE" iconType="INFO"/>
@@ -77,13 +77,13 @@
             </m:MaterialNavBar>
 
             <!-- Search Component -->
-            <m:MaterialNavBar ui:field="searchNav" backgroundColor="white" visible="false">
+            <m:MaterialNavBar ui:field="searchNav" backgroundColor="WHITE" visible="false">
                 <m:MaterialSearch ui:field="search" placeholder="Search Drive" active="true"/>
             </m:MaterialNavBar>
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialSideNav m:id="sidenav" overflow="AUTO" type="FIXED" showOnAttach="true" alwaysShowActivator="true" shadow="0" backgroundColor="grey lighten-3" top="70">
+        <m:MaterialSideNav m:id="sidenav" overflow="AUTO" type="FIXED" showOnAttach="true" alwaysShowActivator="true" shadow="0" backgroundColor="GREY_LIGHTEN_3" top="70">
             <m:MaterialLink iconType="FOLDER" text="My Drive"/>
             <m:MaterialLink iconType="GROUP" text="Shared with me"/>
             <m:MaterialLink iconType="CAMERA" text="Google Photos"/>
@@ -93,25 +93,25 @@
 
             <!-- Some components -->
             <m:MaterialPanel textAlign="CENTER">
-                <m:MaterialLabel text="Copyright @ Drive 2016" textColor="grey darken-1"/>
-                <m:MaterialButton text="Get Drive for PC" backgroundColor="grey darken-1" textColor="white"/>
+                <m:MaterialLabel text="Copyright @ Drive 2016" textColor="GREY_DARKEN_1"/>
+                <m:MaterialButton text="Get Drive for PC" backgroundColor="GREY_DARKEN_1" textColor="WHITE"/>
             </m:MaterialPanel>
 
         </m:MaterialSideNav>
 
-        <m:MaterialRow ui:field="rightPanel" overflow="AUTO" grid="l3 m3 s12" depth="995" padding="0" backgroundColor="white" height="100%" layoutPosition="FIXED" top="56" right="-374" addStyleNames="{style.bordered} {style.animation}">
+        <m:MaterialRow ui:field="rightPanel" overflow="AUTO" grid="l3 m3 s12" depth="995" padding="0" backgroundColor="WHITE" height="100%" layoutPosition="FIXED" top="56" right="-374" addStyleNames="{style.bordered} {style.animation}">
             <!-- Header Info -->
             <m:MaterialRow paddingTop="20">
-                <m:MaterialIcon ui:field="iconViewFile" iconSize="MEDIUM" iconColor="grey darken-1" grid="l4"/>
-                <m:MaterialLabel ui:field="lblViewFile" marginTop="16" fontSize="1.4em" textColor="grey darken-1" grid="l6"/>
+                <m:MaterialIcon ui:field="iconViewFile" iconSize="MEDIUM" iconColor="GREY_DARKEN_1" grid="l4"/>
+                <m:MaterialLabel ui:field="lblViewFile" marginTop="16" fontSize="1.4em" textColor="GREY_DARKEN_1" grid="l6"/>
                 <m:MaterialIcon ui:field="iconClose" iconType="CLOSE" marginTop="16" grid="l2" float="RIGHT"/>
             </m:MaterialRow>
             <m:MaterialDivider width="100%" height="2px"/>
             <!-- Tabs -->
             <m:MaterialRow>
-                <m:MaterialTab backgroundColor="white">
-                    <m:MaterialTabItem><m:MaterialLink href="#details" text="Details" textColor="grey darken-1" waves="DEFAULT"/></m:MaterialTabItem>
-                    <m:MaterialTabItem><m:MaterialLink href="#activity" text="Activity" textColor="grey darken-1" waves="DEFAULT"/></m:MaterialTabItem>
+                <m:MaterialTab backgroundColor="WHITE">
+                    <m:MaterialTabItem><m:MaterialLink href="#details" text="Details" textColor="GREY_DARKEN_1" waves="DEFAULT"/></m:MaterialTabItem>
+                    <m:MaterialTabItem><m:MaterialLink href="#activity" text="Activity" textColor="GREY_DARKEN_1" waves="DEFAULT"/></m:MaterialTabItem>
                 </m:MaterialTab>
             </m:MaterialRow>
             <m:MaterialPanel m:id="details">
@@ -158,15 +158,15 @@
                         <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/roybarberuk/128.jpg" circle="true"/>
                         <m:MaterialLabel text="Tierra uploaded 2 items" fontWeight="BOLD"/>
                         <m:MaterialLabel text="Wed 2:02 AM" fontSize="0.8em" marginBottom="12"/>
-                        <m:MaterialLink  padding="0" iconType="IMAGE" iconColor="red" text="image_sample.jpg" fontSize="0.8em" grid="s12"/>
-                        <m:MaterialLink  padding="0" iconType="IMAGE" iconColor="red" text="image_sample.jpg" fontSize="0.8em" grid="s12"/>
+                        <m:MaterialLink  padding="0" iconType="IMAGE" iconColor="RED" text="image_sample.jpg" fontSize="0.8em" grid="s12"/>
+                        <m:MaterialLink  padding="0" iconType="IMAGE" iconColor="RED" text="image_sample.jpg" fontSize="0.8em" grid="s12"/>
                     </m:MaterialCollectionItem>
                     <m:MaterialCollectionItem type="AVATAR" height="150px">
                         <m:MaterialImage url="https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg" circle="true"/>
                         <m:MaterialLabel text="Levin uploaded 2 items" fontWeight="BOLD"/>
                         <m:MaterialLabel text="Tue 1:02 PM" fontSize="0.8em" marginBottom="12"/>
-                        <m:MaterialLink  padding="0" iconType="ASSIGNMENT" iconColor="blue" text="doc_1.jpg" fontSize="0.8em" grid="s12"/>
-                        <m:MaterialLink  padding="0" iconType="ASSIGNMENT" iconColor="blue" text="doc_2.jpg" fontSize="0.8em" grid="s12"/>
+                        <m:MaterialLink  padding="0" iconType="ASSIGNMENT" iconColor="BLUE" text="doc_1.jpg" fontSize="0.8em" grid="s12"/>
+                        <m:MaterialLink  padding="0" iconType="ASSIGNMENT" iconColor="BLUE" text="doc_2.jpg" fontSize="0.8em" grid="s12"/>
                     </m:MaterialCollectionItem>
                 </m:MaterialCollection>
             </m:MaterialPanel>
@@ -175,11 +175,11 @@
         <!-- Container -->
         <m:MaterialContainer paddingLeft="240" paddingTop="64">
             <m:MaterialRow layoutPosition="RELATIVE" grid="l12 s12 m12">
-                <m:MaterialPanel ui:field="mainPanel" backgroundColor="white" layoutPosition="RELATIVE" marginBottom="0" grid="l12 m12 s12" padding="20" addStyleNames="{style.animation}">
+                <m:MaterialPanel ui:field="mainPanel" backgroundColor="WHITE" layoutPosition="RELATIVE" marginBottom="0" grid="l12 m12 s12" padding="20" addStyleNames="{style.animation}">
                     <m:MaterialRow ui:field="mainHeader" marginBottom="0" paddingLeft="40" addStyleNames="{style.animation}">
-                        <m:MaterialLink text="Name" grid="l5 m5 s6" textColor="grey darken-1"/>
-                        <m:MaterialLink text="Shared by" grid="l4 m4 s6" textColor="grey darken-1"/>
-                        <m:MaterialLink hideOn="HIDE_ON_SMALL_DOWN" text="Share date" grid="l3 m3" textColor="grey darken-1"/>
+                        <m:MaterialLink text="Name" grid="l5 m5 s6" textColor="GREY_DARKEN_1"/>
+                        <m:MaterialLink text="Shared by" grid="l4 m4 s6" textColor="GREY_DARKEN_1"/>
+                        <m:MaterialLink hideOn="HIDE_ON_SMALL_DOWN" text="Share date" grid="l3 m3" textColor="GREY_DARKEN_1"/>
                     </m:MaterialRow>
                     <m:MaterialCollapsible ui:field="driveColaps" marginTop="20" padding="0"/>
                 </m:MaterialPanel>
@@ -188,14 +188,14 @@
 
         <!-- Empty State -->
         <m:MaterialPanel ui:field="emptyState" textAlign="CENTER">
-            <m:MaterialIcon iconType="FOLDER_OPEN" iconSize="LARGE" iconColor="grey lighten-1" padding="20" circle="true" addStyleNames="{style.bordered}"/>
-            <m:MaterialLabel text="Nothing Found" fontSize="2em" fontWeight="LIGHTER" textColor="grey darken-1"/>
-            <m:MaterialLabel text="Please try another search keyword" fontWeight="LIGHTER" textColor="grey darken-1"/>
+            <m:MaterialIcon iconType="FOLDER_OPEN" iconSize="LARGE" iconColor="GREY_LIGHTEN_1" padding="20" circle="true" addStyleNames="{style.bordered}"/>
+            <m:MaterialLabel text="Nothing Found" fontSize="2em" fontWeight="LIGHTER" textColor="GREY_DARKEN_1"/>
+            <m:MaterialLabel text="Please try another search keyword" fontWeight="LIGHTER" textColor="GREY_DARKEN_1"/>
         </m:MaterialPanel>
 
         <!-- FAB -->
         <m:MaterialFAB>
-            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googledrive" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="grey" size="LARGE"/>
+            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googledrive" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="GREY" size="LARGE"/>
         </m:MaterialFAB>
     </m:MaterialPanel>
 </ui:UiBinder>

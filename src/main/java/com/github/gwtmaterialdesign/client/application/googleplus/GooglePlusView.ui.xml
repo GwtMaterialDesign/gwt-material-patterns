@@ -36,7 +36,7 @@
     </ui:style>
     <m:MaterialPanel>
         <!-- Splash screen -->
-        <m:MaterialSplashScreen ui:field="splash" backgroundColor="white" depth="1000" textAlign="CENTER">
+        <m:MaterialSplashScreen ui:field="splash" backgroundColor="WHITE" depth="1000" textAlign="CENTER">
             <m:MaterialImage width="120px" url="http://assets.materialup.com/uploads/b8f2348a-dfa8-4c0a-b696-112e1c293b95/googleplus-logos-02.png" />
             <m:MaterialLabel text="Pattern #1" fontSize="2em" fontWeight="LIGHTER"/>
             <m:MaterialLabel text="GPlus Pattern for Social Network" />
@@ -44,110 +44,110 @@
         <!-- Header -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" shadow="1" depth="996">
             <!-- NavBar -->
-            <m:MaterialNavBar backgroundColor="light-blue" activates="sidenav">
+            <m:MaterialNavBar backgroundColor="LIGHT_BLUE" activates="sidenav">
                 <m:MaterialNavBrand text="Google +" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="APPS" />
                     <m:MaterialLink iconType="NOTIFICATIONS" />
-                    <m:MaterialImage circle="true" width="40px" height="40px" marginTop="12" marginRight="12" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" backgroundColor="white" />
+                    <m:MaterialImage circle="true" width="40px" height="40px" marginTop="12" marginRight="12" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" backgroundColor="WHITE" />
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
             <!-- Tab -->
-            <m:MaterialRow backgroundColor="light-blue" marginBottom="0">
-                <m:MaterialColumn offset="l3 m0 s0" grid="l6 m12 s12" backgroundColor="light-blue">
-                    <m:MaterialTab backgroundColor="light-blue">
-                        <m:MaterialTabItem><m:MaterialLink text="FEATURED" textColor="white" waves="DEFAULT"/></m:MaterialTabItem>
-                        <m:MaterialTabItem><m:MaterialLink text="FOLLOWING" textColor="white" waves="DEFAULT"/></m:MaterialTabItem>
-                        <m:MaterialTabItem><m:MaterialLink text="YOURS" textColor="white" waves="DEFAULT" /></m:MaterialTabItem>
+            <m:MaterialRow backgroundColor="LIGHT_BLUE" marginBottom="0">
+                <m:MaterialColumn offset="l3 m0 s0" grid="l6 m12 s12" backgroundColor="LIGHT_BLUE">
+                    <m:MaterialTab backgroundColor="LIGHT_BLUE">
+                        <m:MaterialTabItem><m:MaterialLink text="FEATURED" textColor="WHITE" waves="DEFAULT"/></m:MaterialTabItem>
+                        <m:MaterialTabItem><m:MaterialLink text="FOLLOWING" textColor="WHITE" waves="DEFAULT"/></m:MaterialTabItem>
+                        <m:MaterialTabItem><m:MaterialLink text="YOURS" textColor="WHITE" waves="DEFAULT" /></m:MaterialTabItem>
                     </m:MaterialTab>
                 </m:MaterialColumn>
             </m:MaterialRow>
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" alwaysShowActivator="true" showOnAttach="true" type="FIXED" shadow="0" backgroundColor="white" top="120">
-            <m:MaterialLink text="Home" iconType="HOME" textColor="grey darken-2"/>
-            <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="grey darken-2"/>
-            <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="grey darken-2"/>
-            <m:MaterialLink text="Profile" iconType="ACCOUNT_CIRCLE" textColor="grey darken-2"/>
-            <m:MaterialLink text="People" iconType="PEOPLE" textColor="grey darken-2" separator="true"/>
-            <m:MaterialLink text="Settings" iconType="COLLECTIONS" textColor="grey darken-2"/>
-            <m:MaterialLink text="Send Feedback" iconType="ANNOUNCEMENT" textColor="grey darken-2"/>
-            <m:MaterialLink text="Help" iconType="HELP" textColor="grey darken-2"/>
+        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" alwaysShowActivator="true" showOnAttach="true" type="FIXED" shadow="0" backgroundColor="WHITE" top="120">
+            <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Profile" iconType="ACCOUNT_CIRCLE" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="People" iconType="PEOPLE" textColor="GREY_DARKEN_2" separator="true"/>
+            <m:MaterialLink text="Settings" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Send Feedback" iconType="ANNOUNCEMENT" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Help" iconType="HELP" textColor="GREY_DARKEN_2"/>
         </m:MaterialSideNav>
 
         <!-- Container -->
         <m:MaterialContainer paddingLeft="250" paddingRight="180" paddingTop="140">
             <!-- Cards -->
-            <m:MaterialLabel text="Featured Collections" marginLeft="12" fontSize="1em" textColor="grey"/>
+            <m:MaterialLabel text="Featured Collections" marginLeft="12" fontSize="1em" textColor="GREY"/>
             <m:MaterialRow>
                 <m:MaterialColumn grid="l3 m4 s12">
-                    <m:MaterialCard backgroundColor="indigo lighten-1">
+                    <m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1">
                         <m:MaterialCardImage>
                             <m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" />
                         </m:MaterialCardImage>
-                        <m:MaterialCardContent textColor="white" height="120px">
+                        <m:MaterialCardContent textColor="WHITE" height="120px">
                             <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
                             <m:MaterialLabel fontSize="1em" text="Android Development Patterns"/>
                             <m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" />
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="FOLLOW" fontSize="1em" fontWeight="BOLDER" textColor="white"/>
+                            <m:MaterialLink text="FOLLOW" fontSize="1em" fontWeight="BOLDER" textColor="WHITE"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3 m4 s12">
-                    <m:MaterialCard backgroundColor="red lighten-1">
+                    <m:MaterialCard backgroundColor="RED_LIGHTEN_1">
                         <m:MaterialCardImage>
                             <m:MaterialImage url="https://lh3.googleusercontent.com/DMTdZh55gQ6JBQ4KULiBiiCo3WRf9XuBaHLNFXqTWPsS=w640-h360-p-rw" />
                         </m:MaterialCardImage>
-                        <m:MaterialCardContent textColor="white" height="120px">
+                        <m:MaterialCardContent textColor="WHITE" height="120px">
                             <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-JOiqGeJfHXs/AAAAAAAAAAI/AAAAAAAAUgE/CAlteQBqWsM/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
                             <m:MaterialLabel fontSize="1em" text="King Leonidas and the 300 Spartans"/>
                             <m:MaterialLabel opacity="0.6" marginTop="4" text="John Trikeriotis" />
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="FOLLOW" fontSize="1em" fontWeight="BOLDER" textColor="white"/>
+                            <m:MaterialLink text="FOLLOW" fontSize="1em" fontWeight="BOLDER" textColor="WHITE"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3 m4 s12">
-                    <m:MaterialCard backgroundColor="teal lighten-1">
+                    <m:MaterialCard backgroundColor="TEAL_LIGHTEN_1">
                         <m:MaterialCardImage>
                             <m:MaterialImage url="https://lh3.googleusercontent.com/bZenq_jiiKus6UQfnH65Uic17EAfqBccYxvY0T2w_wZ4=w640-h360-p-rw" />
                         </m:MaterialCardImage>
-                        <m:MaterialCardContent textColor="white" height="120px">
+                        <m:MaterialCardContent textColor="WHITE" height="120px">
                             <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-sRjeG8XQnxI/AAAAAAAAAAI/AAAAAAAB6Fw/naUHR3Tuyc4/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
                             <m:MaterialLabel fontSize="1em" text="RESEARCH"/>
                             <m:MaterialLabel opacity="0.6" marginTop="4" text="Corina Marinescu" />
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="FOLLOW" fontSize="1em" fontWeight="BOLDER" textColor="white"/>
+                            <m:MaterialLink text="FOLLOW" fontSize="1em" fontWeight="BOLDER" textColor="WHITE"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3 m4 s12">
-                    <m:MaterialCard backgroundColor="black lighten-1">
+                    <m:MaterialCard backgroundColor="BLACK">
                         <m:MaterialCardImage>
                             <m:MaterialImage url="https://lh3.googleusercontent.com/CHlbnXIMkFaTM7er_fH-A0lXa1M4l4BkeK85544v9BoE=w640-h360-p-rw" />
                         </m:MaterialCardImage>
-                        <m:MaterialCardContent textColor="white" height="120px">
+                        <m:MaterialCardContent textColor="WHITE" height="120px">
                             <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-d6TaGsKjLdA/AAAAAAAAAAI/AAAAAAAAmtw/6-wPaVdToHY/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
                             <m:MaterialLabel fontSize="1em" text="A few of my Favorite Words"/>
                             <m:MaterialLabel opacity="0.6" marginTop="4" text="Peter Noah Thomas" />
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="FOLLOW" fontSize="1em" fontWeight="BOLDER" textColor="white"/>
+                            <m:MaterialLink text="FOLLOW" fontSize="1em" fontWeight="BOLDER" textColor="WHITE"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
             </m:MaterialRow>
 
             <!-- Cards -->
-            <m:MaterialLabel text="Featured Posts" marginLeft="12" fontSize="1em" textColor="grey"/>
+            <m:MaterialLabel text="Featured Posts" marginLeft="12" fontSize="1em" textColor="GREY"/>
             <ma:masonry.MaterialMasonry>
                 <!-- Post 1 -->
                 <m:MaterialColumn grid="l6 m6 s12">
@@ -156,15 +156,15 @@
                             <m:MaterialRow marginBottom="0">
                                 <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
-                                <m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/>
+                                <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
                             </m:MaterialRow>
                             <m:MaterialRow marginBottom="0" padding="20">
                                 <m:MaterialLabel text="Amazingly clear seas of the Philippines" />
                                 <m:MaterialRow marginBottom="0">
-                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
                                 </m:MaterialRow>
                             </m:MaterialRow>
                         </m:MaterialCardContent>
@@ -173,10 +173,10 @@
                         </m:MaterialCardImage>
                         <m:MaterialCardAction padding="0">
                             <m:MaterialRow margin="12">
-                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/>
-                                <m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/>
+                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/>
+                                <m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/>
                             </m:MaterialRow>
                             <!-- Collection items for comments -->
                             <m:MaterialCollection>
@@ -196,15 +196,15 @@
                             <m:MaterialRow marginBottom="0">
                                 <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
-                                <m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/>
+                                <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
                             </m:MaterialRow>
                             <m:MaterialRow marginBottom="0" padding="20">
                                 <m:MaterialLabel text="Matinloc Island, El Nido, Palawan" />
                                 <m:MaterialRow marginBottom="0">
-                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
                                 </m:MaterialRow>
                             </m:MaterialRow>
                         </m:MaterialCardContent>
@@ -213,10 +213,10 @@
                         </m:MaterialCardImage>
                         <m:MaterialCardAction padding="0">
                             <m:MaterialRow margin="12">
-                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/>
-                                <m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/>
+                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/>
+                                <m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/>
                             </m:MaterialRow>
                             <!-- Collection items for comments -->
                             <m:MaterialCollection>
@@ -236,15 +236,15 @@
                             <m:MaterialRow marginBottom="0">
                                 <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
-                                <m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/>
+                                <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
                             </m:MaterialRow>
                             <m:MaterialRow marginBottom="0" padding="20">
                                 <m:MaterialLabel text="Matinloc Island, El Nido, Palawan" />
                                 <m:MaterialRow marginBottom="0">
-                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
                                 </m:MaterialRow>
                             </m:MaterialRow>
                         </m:MaterialCardContent>
@@ -253,10 +253,10 @@
                         </m:MaterialCardImage>
                         <m:MaterialCardAction padding="0">
                             <m:MaterialRow margin="12">
-                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/>
-                                <m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/>
+                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/>
+                                <m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/>
                             </m:MaterialRow>
                             <!-- Collection items for comments -->
                             <m:MaterialCollection>
@@ -276,15 +276,15 @@
                             <m:MaterialRow marginBottom="0">
                                 <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
-                                <m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/>
+                                <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
                             </m:MaterialRow>
                             <m:MaterialRow marginBottom="0" padding="20">
                                 <m:MaterialLabel text="The SM Mall Of Asia is a tourist destination that has raised the standard of shopping, leisure and entertainment in the Philippines." />
                                 <m:MaterialRow marginBottom="0">
-                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
                                 </m:MaterialRow>
                             </m:MaterialRow>
                         </m:MaterialCardContent>
@@ -293,10 +293,10 @@
                         </m:MaterialCardImage>
                         <m:MaterialCardAction padding="0">
                             <m:MaterialRow margin="12">
-                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/>
-                                <m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/>
+                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/>
+                                <m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/>
                             </m:MaterialRow>
                             <!-- Collection items for comments -->
                             <m:MaterialCollection>
@@ -316,15 +316,15 @@
                             <m:MaterialRow marginBottom="0">
                                 <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
-                                <m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/>
+                                <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
                             </m:MaterialRow>
                             <m:MaterialRow marginBottom="0" padding="20">
                                 <m:MaterialLabel text="The crystal clear waters of the Philippines  as well appreciated in this transparent canoe!" />
                                 <m:MaterialRow marginBottom="0">
-                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/>
-                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                                    <m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
                                 </m:MaterialRow>
                             </m:MaterialRow>
                         </m:MaterialCardContent>
@@ -333,10 +333,10 @@
                         </m:MaterialCardImage>
                         <m:MaterialCardAction padding="0">
                             <m:MaterialRow margin="12">
-                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/>
-                                <m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="8" marginLeft="12"/>
-                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/>
+                                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/>
+                                <m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="8" marginLeft="12"/>
+                                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/>
                             </m:MaterialRow>
                             <!-- Collection items for comments -->
                             <m:MaterialCollection>
@@ -354,7 +354,7 @@
 
         <!-- FAB -->
         <m:MaterialFAB>
-            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googleplus" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="blue" size="LARGE"/>
+            <m:MaterialAnchorButton target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/master/src/main/java/com/github/gwtmaterialdesign/client/application/googleplus" waves="DEFAULT" type="FLOATING" tooltip="Get Code" tooltipPosition="LEFT" iconType="CODE" backgroundColor="BLUE" size="LARGE"/>
         </m:MaterialFAB>
     </m:MaterialPanel>
 </ui:UiBinder>
