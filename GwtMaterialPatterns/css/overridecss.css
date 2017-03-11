@@ -138,16 +138,16 @@ ul li button.btn-floating {
 .landscape .picker__footer {
 	text-align: right;
 	padding: 5px 10px;
-	/*clear: both;*/
 	width: 60%;
-	/*float: right;*/
-
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	top: 300px
+	top: 300px;
+	height: 40px;
 }
-
+.landscape .picker__box {
+	height: 342px;
+}
 .landscape .picker__month-display {
 	text-transform: uppercase;
 	font-size: 2rem;
@@ -155,7 +155,9 @@ ul li button.btn-floating {
 }
 
 .landscape .picker__day--infocus {
-	padding: 0.60rem 0 !important;
+	padding: 8px !important;
+	width: 36px !important;
+	margin: auto !important;
 }
 
 /** Chips **/
@@ -826,7 +828,6 @@ footer.fixed{
 	}
 	/** Search Bar Responsive design **/
 	.input-field input[type=search] {
-		padding-left: 2rem !important;
 		width: calc(100% - 10rem) !important;
 		margin-bottom: 0 !important;
 	}
@@ -915,22 +916,26 @@ nav .input-field {
 }
 
 /** Fixed the input label position **/
-.input-field label{
-	left: 0;
+.input-field label {
+	left: 0 !important;
 }
+.row > .input-field label {
+	left: 0.75rem !important;
+}
+
 .dropdown-content {
 	z-index: 995 !important;
 }
 
-/** Fixed the autofill bg color on chrome **/
+@-webkit-keyframes autofill {
+	to { background: transparent; }
+}
 input:-webkit-autofill {
-	-webkit-box-shadow: 0 0 0px 100px white inset !important;
+	-webkit-animation-name: autofill !important;
+	-webkit-animation-fill-mode: both !important;;
 }
 
 /** Fixed breadcrumb **/
-.breadcrumb:nth-child(2):before {
-	display: none;
-}
 
 .breadcrumb i{
 	float: none !important;
@@ -981,4 +986,12 @@ input:-webkit-autofill {
 /** Fixed Horizontal FAB **/
 .horizontal.fixed-action-btn ul {
 	left: auto;
+}
+
+.weatherContainer .card {
+	background-color: initial !important;
+}
+
+.input-field input[type=search]+label {
+	left: 1rem !important;
 }
