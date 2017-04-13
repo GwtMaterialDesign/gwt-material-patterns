@@ -44,11 +44,13 @@
             </m:MaterialMiniSideNav>
         </m:MaterialHeader>
 
-        <m:MaterialContainer textAlign="CENTER">
-            <m:MaterialTitle title="Material Card SideNav" description="Card SideNav is an extension to MaterialSideNav that provides a card container to it's sidenav links. Good for few sidenav link items." />
-            <m:MaterialFAB>
-                <m:MaterialButton type="FLOATING" backgroundColor="PINK" size="LARGE" iconType="CODE" />
-            </m:MaterialFAB>
+        <m:MaterialContainer>
+            <m:MaterialRow textAlign="CENTER" paddingTop="40">
+                <m:MaterialImage url="http://i.imgur.com/7JpG0F4.gif" />
+                <m:MaterialFAB>
+                    <m:MaterialButton type="FLOATING" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/blob/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/sidenavmini/MiniSideNavView.ui.xml" target="_blank" backgroundColor="PINK" size="LARGE" iconType="CODE" />
+                </m:MaterialFAB>
+            </m:MaterialRow>
         </m:MaterialContainer>
     </m:MaterialPanel>
 </ui:UiBinder>
