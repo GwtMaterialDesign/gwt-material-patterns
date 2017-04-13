@@ -26,7 +26,6 @@
         @external side-nav, active;
         body{
             background-color: #e9e9e9;
-            overflow: auto !important;
         }
         .side-nav li.active{
             border-left: 4px solid #757575;
@@ -83,7 +82,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialSideNav m:id="sidenav" overflow="AUTO" type="FIXED" showOnAttach="true" alwaysShowActivator="true" shadow="0" backgroundColor="GREY_LIGHTEN_3" top="70">
+        <m:MaterialPushSideNav m:id="sidenav" width="250" withHeader="true">
             <m:MaterialLink iconType="FOLDER" text="My Drive"/>
             <m:MaterialLink iconType="GROUP" text="Shared with me"/>
             <m:MaterialLink iconType="CAMERA" text="Google Photos"/>
@@ -97,7 +96,7 @@
                 <m:MaterialButton text="Get Drive for PC" backgroundColor="GREY_DARKEN_1" textColor="WHITE"/>
             </m:MaterialPanel>
 
-        </m:MaterialSideNav>
+        </m:MaterialPushSideNav>
 
         <m:MaterialRow ui:field="rightPanel" overflow="AUTO" grid="l3 m3 s12" depth="995" padding="0" backgroundColor="WHITE" height="100%" layoutPosition="FIXED" top="56" right="-374" addStyleNames="{style.bordered} {style.animation}">
             <!-- Header Info -->

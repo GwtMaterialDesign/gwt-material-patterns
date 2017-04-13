@@ -30,8 +30,8 @@
         .side-nav li.active{
             background: #fff !important;
         }
-        body{
-            overflow: auto !important;
+        .side-nav-gplus {
+            height: calc(100vh - 113px);
         }
     </ui:style>
     <m:MaterialPanel>
@@ -65,7 +65,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" alwaysShowActivator="true" showOnAttach="true" type="FIXED" shadow="0" backgroundColor="WHITE" top="120">
+        <m:MaterialPushSideNav m:id="sidenav" width="250" withHeader="true" top="113">
             <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
@@ -74,7 +74,23 @@
             <m:MaterialLink text="Settings" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Send Feedback" iconType="ANNOUNCEMENT" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Help" iconType="HELP" textColor="GREY_DARKEN_2"/>
-        </m:MaterialSideNav>
+            <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Profile" iconType="ACCOUNT_CIRCLE" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="People" iconType="PEOPLE" textColor="GREY_DARKEN_2" separator="true"/>
+            <m:MaterialLink text="Settings" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Send Feedback" iconType="ANNOUNCEMENT" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Help" iconType="HELP" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Profile" iconType="ACCOUNT_CIRCLE" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="People" iconType="PEOPLE" textColor="GREY_DARKEN_2" separator="true"/>
+            <m:MaterialLink text="Settings" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Send Feedback" iconType="ANNOUNCEMENT" textColor="GREY_DARKEN_2"/>
+            <m:MaterialLink text="Help" iconType="HELP" textColor="GREY_DARKEN_2"/>
+        </m:MaterialPushSideNav>
 
         <!-- Container -->
         <m:MaterialContainer paddingLeft="250" paddingRight="180" paddingTop="140">

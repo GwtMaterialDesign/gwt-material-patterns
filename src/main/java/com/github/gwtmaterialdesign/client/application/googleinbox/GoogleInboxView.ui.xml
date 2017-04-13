@@ -25,7 +25,6 @@
         @external side-nav, active;
         body{
             background-color: #fafafa;
-            overflow: scroll !important;
         }
         .side-nav li.active{
             font-weight: bold;
@@ -52,7 +51,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNav m:id="sidenav" width="250" overflow="AUTO" alwaysShowActivator="true" showOnAttach="true" type="FIXED" shadow="0" backgroundColor="GREY_LIGHTEN_5" top="70">
+        <m:MaterialPushSideNav m:id="sidenav" width="250" withHeader="true">
             <m:MaterialLink text="Inbox" iconType="INBOX" iconColor="BLUE" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Snoozed" iconType="ACCESS_TIME" iconColor="ORANGE" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Done" separator="true" iconType="CHECK" iconColor="GREEN" textColor="GREY_DARKEN_2"/>
@@ -63,7 +62,7 @@
             <m:MaterialLink text="Spam" iconType="REPORT" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Contacts" iconType="CONTACTS" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Gmail" iconType="MAIL" textColor="GREY_DARKEN_2"/>
-        </m:MaterialSideNav>
+        </m:MaterialPushSideNav>
 
         <!-- Container -->
         <m:MaterialContainer paddingLeft="330" paddingRight="100" marginTop="80">

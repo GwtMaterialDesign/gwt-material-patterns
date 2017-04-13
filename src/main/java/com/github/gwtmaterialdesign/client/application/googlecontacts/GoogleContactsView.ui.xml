@@ -27,7 +27,6 @@
         @external side-nav, active;
         body{
             background-color: #e9e9e9;
-            overflow: scroll !important;
         }
         .side-nav li.active{
             border-left: 4px solid #1E88E5;
@@ -63,7 +62,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialSideNav m:id="sidenav" type="CARD" width="240" layoutPosition="FIXED">
+        <m:MaterialCardSideNav m:id="sidenav" width="250" layoutPosition="FIXED">
             <m:MaterialRow separator="true" marginBottom="0">
                 <m:MaterialImage marginTop="20" height="auto" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" grid="l3 m3 s3" circle="true"/>
                 <m:MaterialLabel text="Mark Kevin Baldemor" fontWeight="BOLD"  marginTop="8" grid="l9 m9 s9"/>
@@ -74,18 +73,20 @@
             <m:MaterialLink iconType="RADIO_BUTTON_CHECKED" text="Circles" />
             <m:MaterialLink iconType="FIND_IN_PAGE" text="Find Duplicates" />
             <m:MaterialLink iconType="MORE" text="More" />
-        </m:MaterialSideNav>
+        </m:MaterialCardSideNav>
 
         <!-- Container -->
-        <m:MaterialContainer paddingLeft="320" paddingRight="140" marginTop="80">
-            <m:MaterialLabel text="Starred" marginTop="32" marginLeft="24" textColor="GREY"/>
-            <!-- Collapsible Starred -->
-            <m:MaterialCollapsible ui:field="starredColaps"/>
+        <m:MaterialPanel padding="40">
+            <m:MaterialContainer marginTop="80">
+                <m:MaterialLabel text="Starred" marginTop="32" marginLeft="24" textColor="GREY"/>
+                <!-- Collapsible Starred -->
+                <m:MaterialCollapsible ui:field="starredColaps"/>
 
-            <!-- Collapsible Frequent Contacts -->
-            <m:MaterialLabel text="Frequently Contacted" marginTop="32" marginLeft="24" textColor="GREY"/>
-            <m:MaterialCollapsible ui:field="frequentColaps"/>
-        </m:MaterialContainer>
+                <!-- Collapsible Frequent Contacts -->
+                <m:MaterialLabel text="Frequently Contacted" marginTop="32" marginLeft="24" textColor="GREY"/>
+                <m:MaterialCollapsible ui:field="frequentColaps"/>
+            </m:MaterialContainer>
+        </m:MaterialPanel>
 
         <!-- FAB -->
         <m:MaterialFAB>
