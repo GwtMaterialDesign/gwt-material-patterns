@@ -28,9 +28,11 @@ import com.github.gwtmaterialdesign.client.application.googleplus.GooglePlusModu
 import com.github.gwtmaterialdesign.client.application.sidenavcard.CardSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavdrawer.DrawerSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavdrawerheader.DrawerHeaderSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavedge.EdgeSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavfixed.FixedSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavmini.MiniSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavminiexpand.MiniExpandSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavmultiple.MultipleSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavpush.PushSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavpushheader.PushHeaderSideNavModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
@@ -50,6 +52,8 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new MiniSideNavModule());
         install(new MiniExpandSideNavModule());
         install(new CardSideNavModule());
+        install(new EdgeSideNavModule());
+        install(new MultipleSideNavModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

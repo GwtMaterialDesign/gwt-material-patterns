@@ -35,6 +35,8 @@ public class NameTokens {
     public static final String miniSideNav = "sidenav_mini";
     public static final String miniExpandableSideNav = "sidenav_mini_expandable";
     public static final String cardSideNav = "sidenav_card";
+    public static final String edgeSideNav = "sidenav_edge";
+    public static final String multipleSideNav = "sidenav_multiple";
 
     public static String getGoogle_plus() {
         return google_plus;
@@ -82,5 +84,13 @@ public class NameTokens {
 
     public static String getMiniExpandableSideNav() {
         return miniExpandableSideNav;
+    }
+
+    public static String getEdgeSideNav() {
+        return edgeSideNav;
+    }
+
+    public static String getMultipleSideNav() {
+        return multipleSideNav;
     }
 }
