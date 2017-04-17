@@ -50,7 +50,7 @@
         <!-- Header Section -->
         <m:MaterialHeader depth="996" layoutPosition="FIXED" width="100%">
             <!-- NavBar Component -->
-            <m:MaterialNavBar ui:field="appNav" backgroundColor="GREY_DARKEN_1" activates="sidenav">
+            <m:MaterialNavBar ui:field="appNav" backgroundColor="GREY_DARKEN_1" activates="sidenavDrive">
                 <m:MaterialNavBrand text="Drive"/>
 
                 <m:MaterialNavSection float="RIGHT" hideOn="NONE">
@@ -82,7 +82,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialPushSideNav m:id="sidenav" width="250" withHeader="true">
+        <m:MaterialPushSideNav m:id="sidenavDrive" width="250" withHeader="true">
             <m:MaterialLink iconType="FOLDER" text="My Drive"/>
             <m:MaterialLink iconType="GROUP" text="Shared with me"/>
             <m:MaterialLink iconType="CAMERA" text="Google Photos"/>

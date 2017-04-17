@@ -29,10 +29,10 @@
     </ui:style>
     <m:MaterialPanel>
         <m:MaterialHeader ui:field="header">
-            <m:MaterialNavBar activates="sidenav" backgroundColor="BLUE" shadow="1">
+            <m:MaterialNavBar activates="sidenavMini" backgroundColor="BLUE" shadow="1">
                 <m:MaterialNavBrand paddingLeft="60" text="gwt-material" />
             </m:MaterialNavBar>
-            <m:MaterialMiniSideNav m:id="sidenav" ui:field="sideNav" width="300">
+            <m:MaterialMiniSideNav m:id="sidenavMini" ui:field="sideNav" width="300">
                 <m:MaterialLink iconType="INBOX" text="Inbox">
                     <m:MaterialBadge text="1 new" />
                 </m:MaterialLink>

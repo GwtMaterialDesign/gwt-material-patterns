@@ -40,7 +40,7 @@
         <!-- Header -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" depth="996" top="0" >
             <!-- NavBar -->
-            <m:MaterialNavBar backgroundColor="BLUE" activates="sidenav">
+            <m:MaterialNavBar backgroundColor="BLUE" activates="sidenavInbox">
                 <m:MaterialNavBrand text="Google Inbox" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="APPS" />
@@ -51,7 +51,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialPushSideNav m:id="sidenav" width="250" withHeader="true">
+        <m:MaterialPushSideNav m:id="sidenavInbox" width="250" withHeader="true">
             <m:MaterialLink text="Inbox" iconType="INBOX" iconColor="BLUE" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Snoozed" iconType="ACCESS_TIME" iconColor="ORANGE" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Done" separator="true" iconType="CHECK" iconColor="GREEN" textColor="GREY_DARKEN_2"/>
