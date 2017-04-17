@@ -32,17 +32,18 @@
             <m:MaterialNavBar activates="sidenavMini" backgroundColor="BLUE" shadow="1">
                 <m:MaterialNavBrand paddingLeft="60" text="gwt-material" />
             </m:MaterialNavBar>
-            <m:MaterialSideNavMini m:id="sidenavMini" ui:field="sideNav" width="300">
-                <m:MaterialLink iconType="INBOX" text="Inbox">
-                    <m:MaterialBadge text="1 new" />
-                </m:MaterialLink>
-                <m:MaterialLink iconType="SEND" text="Send Mail"/>
-                <m:MaterialLink iconType="DRAFTS" text="Drafts"/>
-                <m:MaterialLink iconType="MAIL" text="All Mail"/>
-                <m:MaterialLink iconType="DELETE" text="Trash"/>
-                <m:MaterialLink iconType="INFO_OUTLINE" text="Spam"/>
-            </m:MaterialSideNavMini>
         </m:MaterialHeader>
+
+        <m:MaterialSideNavMini m:id="sidenavMini" ui:field="sideNav" width="300">
+            <m:MaterialLink iconType="INBOX" text="Inbox">
+                <m:MaterialBadge text="1 new" />
+            </m:MaterialLink>
+            <m:MaterialLink iconType="SEND" text="Send Mail"/>
+            <m:MaterialLink iconType="DRAFTS" text="Drafts"/>
+            <m:MaterialLink iconType="MAIL" text="All Mail"/>
+            <m:MaterialLink iconType="DELETE" text="Trash"/>
+            <m:MaterialLink iconType="INFO_OUTLINE" text="Spam"/>
+        </m:MaterialSideNavMini>
 
         <m:MaterialContainer>
             <m:MaterialRow textAlign="CENTER" paddingTop="40">

@@ -34,7 +34,7 @@ public class ShrinkNavBarPresenter extends Presenter<ShrinkNavBarPresenter.MyVie
     interface MyView extends View {
     }
 
-    @NameToken(NameTokens.cardSideNav)
+    @NameToken(NameTokens.shrinkNavBar)
     @ProxyStandard
     interface MyProxy extends ProxyPlace<ShrinkNavBarPresenter> {
     }
