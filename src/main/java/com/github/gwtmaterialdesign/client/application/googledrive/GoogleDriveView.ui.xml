@@ -82,7 +82,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialPushSideNav m:id="sidenavDrive" width="250" withHeader="true">
+        <m:MaterialSideNavPush m:id="sidenavDrive" width="250" withHeader="true">
             <m:MaterialLink iconType="FOLDER" text="My Drive"/>
             <m:MaterialLink iconType="GROUP" text="Shared with me"/>
             <m:MaterialLink iconType="CAMERA" text="Google Photos"/>
@@ -96,7 +96,7 @@
                 <m:MaterialButton text="Get Drive for PC" backgroundColor="GREY_DARKEN_1" textColor="WHITE"/>
             </m:MaterialPanel>
 
-        </m:MaterialPushSideNav>
+        </m:MaterialSideNavPush>
 
         <m:MaterialRow ui:field="rightPanel" overflow="AUTO" grid="l3 m3 s12" depth="995" padding="0" backgroundColor="WHITE" height="100%" layoutPosition="FIXED" top="56" right="-374" addStyleNames="{style.bordered} {style.animation}">
             <!-- Header Info -->

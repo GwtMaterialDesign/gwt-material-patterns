@@ -51,7 +51,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialPushSideNav m:id="sidenavInbox" width="250" withHeader="true">
+        <m:MaterialSideNavPush m:id="sidenavInbox" width="250" withHeader="true">
             <m:MaterialLink text="Inbox" iconType="INBOX" iconColor="BLUE" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Snoozed" iconType="ACCESS_TIME" iconColor="ORANGE" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Done" separator="true" iconType="CHECK" iconColor="GREEN" textColor="GREY_DARKEN_2"/>
@@ -62,7 +62,7 @@
             <m:MaterialLink text="Spam" iconType="REPORT" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Contacts" iconType="CONTACTS" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Gmail" iconType="MAIL" textColor="GREY_DARKEN_2"/>
-        </m:MaterialPushSideNav>
+        </m:MaterialSideNavPush>
 
         <!-- Container -->
         <m:MaterialContainer paddingLeft="330" paddingRight="100" marginTop="80">

@@ -38,6 +38,7 @@ public class NameTokens {
     public static final String edgeSideNav = "sidenav_edge";
     public static final String multipleSideNav = "sidenav_multiple";
     public static final String colapsSideNav = "sidenav_colaps";
+    public static final String shrinkNavBar = "navbar_shrink";
 
     public static String getGoogle_plus() {
         return google_plus;
@@ -97,5 +98,9 @@ public class NameTokens {
 
     public static String getColapsSideNav() {
         return colapsSideNav;
+    }
+
+    public static String getShrinkNavBar() {
+        return shrinkNavBar;
     }
 }
