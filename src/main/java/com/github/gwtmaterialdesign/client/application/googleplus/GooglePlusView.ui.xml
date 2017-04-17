@@ -44,7 +44,7 @@
         <!-- Header -->
         <m:MaterialHeader layoutPosition="FIXED" width="100%" shadow="1" depth="996">
             <!-- NavBar -->
-            <m:MaterialNavBar backgroundColor="LIGHT_BLUE" activates="sidenav">
+            <m:MaterialNavBar backgroundColor="LIGHT_BLUE" activates="sidenavGplus">
                 <m:MaterialNavBrand text="Google +" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="APPS" />
@@ -65,7 +65,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialPushSideNav m:id="sidenav" width="250" withHeader="true" top="113">
+        <m:MaterialPushSideNav m:id="sidenavGplus" width="250" withHeader="true" top="113">
             <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
