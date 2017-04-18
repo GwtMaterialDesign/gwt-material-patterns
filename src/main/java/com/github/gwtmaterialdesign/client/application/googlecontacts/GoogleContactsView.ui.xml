@@ -41,10 +41,10 @@
             <m:MaterialLabel text="Contacts Pattern for User Management" />
         </m:MaterialSplashScreen>
         <!-- Header Section -->
-        <m:MaterialHeader layoutPosition="FIXED" width="100%" depth="996" top="0">
+        <m:MaterialHeader>
             <!-- NavBar Component -->
             <m:MaterialNavBar ui:field="appNav" backgroundColor="BLUE_DARKEN_1" activates="sidenavContacts">
-                <m:MaterialNavBrand text="Contacts" />
+                <m:MaterialNavBrand paddingLeft="60" text="Contacts" />
                 <m:MaterialNavSection float="RIGHT" hideOn="NONE">
                     <m:MaterialIcon hideOn="HIDE_ON_SMALL_DOWN" activates="dpSort" iconType="SORT_BY_ALPHA" marginRight="20" />
                     <m:MaterialIcon hideOn="HIDE_ON_SMALL_DOWN" iconType="CALL" marginRight="20" />
@@ -62,7 +62,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialSideNavCard m:id="sidenavContacts" width="250" layoutPosition="FIXED">
+        <m:MaterialSideNavCard m:id="sidenavContacts" width="250" allowBodyScroll="true" layoutPosition="FIXED">
             <m:MaterialRow separator="true" marginBottom="0">
                 <m:MaterialImage marginTop="20" height="auto" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" grid="l3 m3 s3" circle="true"/>
                 <m:MaterialLabel text="Mark Kevin Baldemor" fontWeight="BOLD"  marginTop="8" grid="l9 m9 s9"/>

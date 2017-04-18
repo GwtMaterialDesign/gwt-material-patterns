@@ -41,7 +41,7 @@
         <m:MaterialHeader layoutPosition="FIXED" width="100%" depth="996" top="0" >
             <!-- NavBar -->
             <m:MaterialNavBar backgroundColor="BLUE" activates="sidenavInbox">
-                <m:MaterialNavBrand text="Google Inbox" />
+                <m:MaterialNavBrand paddingLeft="60" text="Google Inbox" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="APPS" />
                     <m:MaterialLink iconType="NOTIFICATIONS" />

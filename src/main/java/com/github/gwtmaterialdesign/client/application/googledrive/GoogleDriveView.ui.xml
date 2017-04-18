@@ -51,7 +51,7 @@
         <m:MaterialHeader depth="996" layoutPosition="FIXED" width="100%">
             <!-- NavBar Component -->
             <m:MaterialNavBar ui:field="appNav" backgroundColor="GREY_DARKEN_1" activates="sidenavDrive">
-                <m:MaterialNavBrand text="Drive"/>
+                <m:MaterialNavBrand paddingLeft="60" text="Drive"/>
 
                 <m:MaterialNavSection float="RIGHT" hideOn="NONE">
                     <m:MaterialLink hideOn="HIDE_ON_SMALL_DOWN" text="Drive" iconPosition="RIGHT" marginRight="20" iconType="ARROW_DROP_DOWN" textColor="WHITE" activates="dpDrive" float="LEFT">

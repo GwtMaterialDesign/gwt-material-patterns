@@ -1,4 +1,4 @@
-package com.github.gwtmaterialdesign.client.application.navbarshrink;
+package com.github.gwtmaterialdesign.client.application.navbartall;
 
 /*
  * #%L
@@ -25,21 +25,19 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.*;
-import gwt.material.design.client.ui.animate.MaterialAnimation;
-import gwt.material.design.client.ui.animate.Transition;
+import gwt.material.design.client.ui.MaterialFAB;
+import gwt.material.design.client.ui.MaterialNavBar;
+import gwt.material.design.client.ui.MaterialSideNav;
 
 import javax.inject.Inject;
 
-import static gwt.material.design.jquery.client.api.JQuery.$;
 
-
-public class ShrinkNavBarView extends ViewImpl implements ShrinkNavBarPresenter.MyView {
-    interface Binder extends UiBinder<Widget, ShrinkNavBarView> {
+public class TallNavBarView extends ViewImpl implements TallNavBarPresenter.MyView {
+    interface Binder extends UiBinder<Widget, TallNavBarView> {
     }
 
     @UiField
-    MaterialNavBarShrink navBar;
+    MaterialNavBar navBar;
 
     @UiField
     MaterialFAB fab;
@@ -48,18 +46,8 @@ public class ShrinkNavBarView extends ViewImpl implements ShrinkNavBarPresenter.
     MaterialSideNav sideNav;
 
     @Inject
-    ShrinkNavBarView(Binder uiBinder) {
+    TallNavBarView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
-        navBar.addExpandHandler(event -> {
-            fab.setVisible(true);
-            MaterialToast.fireToast("Expanded");
-        });
-
-        navBar.addShrinkHandler(event -> {
-            fab.setVisible(false);
-            MaterialToast.fireToast("Shrink");
-        });
     }
 
 }
