@@ -51,7 +51,7 @@
         </m:MaterialSideNavPush>
 
         <m:MaterialContainer>
-            <m:MaterialRow textAlign="CENTER" paddingTop="40">
+            <m:MaterialRow textAlign="CENTER" paddingTop="120">
                 <m:MaterialImage url="http://i.imgur.com/7JpG0F4.gif" />
                 <m:MaterialFAB>
                     <m:MaterialAnchorButton type="FLOATING" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/blob/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/sidenavpushheader/PushHeaderSideNavView.ui.xml" target="_blank" backgroundColor="PINK" size="LARGE" iconType="CODE" />

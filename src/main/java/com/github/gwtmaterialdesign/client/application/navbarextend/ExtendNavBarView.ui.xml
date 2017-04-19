@@ -29,17 +29,20 @@
     </ui:style>
     <m:MaterialPanel>
         <m:MaterialHeader ui:field="header">
-            <m:MaterialNavBar activates="sidenavDrawer" backgroundColor="BLUE" shadow="1">
-                <m:MaterialNavBrand paddingLeft="60" text="gwt-material" />
+            <m:MaterialNavBar ui:field="navBar" layoutPosition="FIXED" height="auto" activates="sidenav" backgroundColor="PURPLE">
+                <m:MaterialNavBrand fontSize="2.2em" paddingLeft="60" text="My Files" />
+                <m:MaterialNavSection float="RIGHT">
+                    <m:MaterialLink iconType="APPS" />
+                    <m:MaterialLink iconType="REFRESH" />
+                </m:MaterialNavSection>
+                <m:MaterialNavContent paddingLeft="120" paddingTop="40" paddingBottom="20" >
+                    <m:MaterialChip text="Extension" letter="E" backgroundColor="PURPLE_DARKEN_3" letterBackgroundColor="PURPLE_LIGHTEN_3" textColor="WHITE" />
+                </m:MaterialNavContent>
             </m:MaterialNavBar>
         </m:MaterialHeader>
 
-        <m:MaterialSideNavDrawer m:id="sidenavDrawer" ui:field="sideNav" width="300">
-            <ma:sideprofile.MaterialSideProfile url="http://static1.squarespace.com/static/51609147e4b0715db61d32b6/521b97cee4b05f031fd12dde/5519e33de4b06a1002802805/1431718693701/?format=1500w">
-                <m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" />
-                <m:MaterialLabel text="GWT Material" textColor="WHITE"/>
-                <m:MaterialLink text="gwt-material@gmail.com" activates="dropProfile" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE"/>
-            </ma:sideprofile.MaterialSideProfile>
+        <m:MaterialSideNavDrawer m:id="sidenav" ui:field="sidenav" width="300">
+            <m:MaterialNavBrand text="gwt-material" />
             <m:MaterialLink iconType="INBOX" text="Inbox">
                 <m:MaterialBadge text="1 new" />
             </m:MaterialLink>
@@ -50,13 +53,13 @@
             <m:MaterialLink iconType="INFO_OUTLINE" text="Spam"/>
         </m:MaterialSideNavDrawer>
 
-        <m:MaterialContainer>
-            <m:MaterialRow textAlign="CENTER" paddingTop="60">
+        <m:MaterialContainer height="1600px" paddingTop="200">
+            <m:MaterialRow textAlign="CENTER" paddingTop="40">
                 <m:MaterialImage url="http://i.imgur.com/7JpG0F4.gif" />
-                <m:MaterialFAB>
-                    <m:MaterialButton type="FLOATING" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/blob/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/sidenavdrawer/DrawerSideNavView.ui.xml" target="_blank" backgroundColor="PINK" size="LARGE" iconType="CODE" />
-                </m:MaterialFAB>
             </m:MaterialRow>
+            <m:MaterialFAB ui:field="fab">
+                <m:MaterialButton type="FLOATING" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/blob/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/sidenavcard/CardSideNavView.ui.xml" target="_blank" backgroundColor="PINK" size="LARGE" iconType="CODE" />
+            </m:MaterialFAB>
         </m:MaterialContainer>
     </m:MaterialPanel>
 </ui:UiBinder>

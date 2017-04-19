@@ -51,7 +51,7 @@
         </m:MaterialSideNavPush>
 
         <m:MaterialContainer>
-            <m:MaterialRow textAlign="CENTER" paddingTop="40">
+            <m:MaterialRow textAlign="CENTER" paddingTop="120">
                 <m:MaterialImage url="http://i.imgur.com/7JpG0F4.gif" />
                 <m:MaterialFAB>
                     <m:MaterialButton type="FLOATING" href="" target="_blank" backgroundColor="PINK" size="LARGE" iconType="CODE" />

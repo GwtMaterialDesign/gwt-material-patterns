@@ -26,8 +26,10 @@ import com.github.gwtmaterialdesign.client.application.googledrive.GoogleDriveMo
 import com.github.gwtmaterialdesign.client.application.googleinbox.GoogleInboxModule;
 import com.github.gwtmaterialdesign.client.application.googleplus.GooglePlusModule;
 import com.github.gwtmaterialdesign.client.application.navbardefault.DefaultNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbarextend.ExtendNavBarModule;
 import com.github.gwtmaterialdesign.client.application.navbarfixed.FixedNavBarModule;
 import com.github.gwtmaterialdesign.client.application.navbarshrink.ShrinkNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbartabs.TabNavBarModule;
 import com.github.gwtmaterialdesign.client.application.navbartall.TallNavBarModule;
 import com.github.gwtmaterialdesign.client.application.sidenavcard.CardSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavcollapsible.CollapsibleSideNavModule;
@@ -64,6 +66,8 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new DefaultNavBarModule());
         install(new FixedNavBarModule());
         install(new TallNavBarModule());
+        install(new TabNavBarModule());
+        install(new ExtendNavBarModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);
