@@ -23,15 +23,15 @@
 
     <ui:with field="res" type="com.github.gwtmaterialdesign.client.resources.AppResources"/>
     <ui:style>
-        @external side-nav, active;
+        @external sideNavGplus, side-nav, active;
         .side-nav li.active a{
             color: #2196f3 !important;
         }
         .side-nav li.active{
             background: #fff !important;
         }
-        .side-nav-gplus {
-            height: calc(100vh - 113px);
+        .sideNavGplus {
+            height: calc(100vh - 113px) !important;
         }
     </ui:style>
     <m:MaterialPanel>
@@ -65,7 +65,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNavPush m:id="sidenavGplus" width="250" withHeader="true" top="113">
+        <m:MaterialSideNavPush m:id="sidenavGplus" addStyleNames="sideNavGplus" width="250" withHeader="true" top="113">
             <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
