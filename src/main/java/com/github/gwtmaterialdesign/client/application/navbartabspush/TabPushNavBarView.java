@@ -1,4 +1,4 @@
-package com.github.gwtmaterialdesign.client.application.navbartabs;
+package com.github.gwtmaterialdesign.client.application.navbartabspush;
 
 /*
  * #%L
@@ -21,6 +21,7 @@ package com.github.gwtmaterialdesign.client.application.navbartabs;
  */
 
 
+import com.github.gwtmaterialdesign.client.application.navbartabs.TabNavBarPresenter;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
@@ -30,11 +31,9 @@ import gwt.material.design.client.ui.MaterialTab;
 
 import javax.inject.Inject;
 
-import static gwt.material.design.client.js.JsMaterialElement.$;
 
-
-public class TabNavBarView extends ViewImpl implements TabNavBarPresenter.MyView {
-    interface Binder extends UiBinder<Widget, TabNavBarView> {
+public class TabPushNavBarView extends ViewImpl implements TabPushNavBarPresenter.MyView {
+    interface Binder extends UiBinder<Widget, TabPushNavBarView> {
     }
 
     @UiField
@@ -44,7 +43,7 @@ public class TabNavBarView extends ViewImpl implements TabNavBarPresenter.MyView
     MaterialTab tab;
 
     @Inject
-    TabNavBarView(Binder uiBinder) {
+    TabPushNavBarView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
         sidenav.addOpenedHandler(event -> {
             tab.resize();

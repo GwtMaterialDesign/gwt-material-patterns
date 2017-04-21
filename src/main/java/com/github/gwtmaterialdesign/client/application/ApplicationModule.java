@@ -30,6 +30,7 @@ import com.github.gwtmaterialdesign.client.application.navbarextend.ExtendNavBar
 import com.github.gwtmaterialdesign.client.application.navbarfixed.FixedNavBarModule;
 import com.github.gwtmaterialdesign.client.application.navbarshrink.ShrinkNavBarModule;
 import com.github.gwtmaterialdesign.client.application.navbartabs.TabNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbartabspush.TabPushNavBarModule;
 import com.github.gwtmaterialdesign.client.application.navbartall.TallNavBarModule;
 import com.github.gwtmaterialdesign.client.application.sidenavcard.CardSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavcollapsible.CollapsibleSideNavModule;
@@ -68,6 +69,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new TallNavBarModule());
         install(new TabNavBarModule());
         install(new ExtendNavBarModule());
+        install(new TabPushNavBarModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

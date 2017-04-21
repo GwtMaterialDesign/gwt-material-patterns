@@ -44,6 +44,7 @@ public class NameTokens {
     public static final String tallNavBar = "navbar_tall";
     public static final String tabNavBar = "navbar_tab";
     public static final String extendNavBar = "navbar_extend";
+    public static final String tabPushNavBar = "navbar_tab_push";
 
     public static String getGoogle_plus() {
         return google_plus;
@@ -127,5 +128,9 @@ public class NameTokens {
 
     public static String getExtendNavBar() {
         return extendNavBar;
+    }
+
+    public static String getTabPushNavBar() {
+        return tabPushNavBar;
     }
 }
