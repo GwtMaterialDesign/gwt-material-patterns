@@ -44,12 +44,12 @@
                 <!-- PARENT 1 -->
                 <m:MaterialCollapsibleItem>
                     <m:MaterialCollapsibleHeader waves="DEFAULT">
-                        <m:MaterialLink text="Parent" iconType="POLYMER"/>
+                        <m:MaterialLink  text="Parent" iconType="POLYMER"/>
                     </m:MaterialCollapsibleHeader>
                     <m:MaterialCollapsibleBody>
                         <m:html.UnorderedList>
-                            <m:MaterialLink text="Child 1" waves="DEFAULT" />
-                            <m:MaterialLink text="Child 2" waves="DEFAULT" />
+                            <m:MaterialLink iconType="POLYMER" text="Child 1" waves="DEFAULT" />
+                            <m:MaterialLink iconType="POLYMER" text="Child 2" waves="DEFAULT" />
                         </m:html.UnorderedList>
                     </m:MaterialCollapsibleBody>
                 </m:MaterialCollapsibleItem>
@@ -60,8 +60,8 @@
                     </m:MaterialCollapsibleHeader>
                     <m:MaterialCollapsibleBody>
                         <m:html.UnorderedList>
-                            <m:MaterialLink text="Child 1" waves="DEFAULT" />
-                            <m:MaterialLink text="Child 2" waves="DEFAULT" />
+                            <m:MaterialLink iconType="POLYMER" text="Child 1" waves="DEFAULT" />
+                            <m:MaterialLink iconType="POLYMER" text="Child 2" waves="DEFAULT" />
                         </m:html.UnorderedList>
                     </m:MaterialCollapsibleBody>
                 </m:MaterialCollapsibleItem>

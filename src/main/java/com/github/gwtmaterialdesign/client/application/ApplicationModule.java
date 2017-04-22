@@ -34,6 +34,7 @@ import com.github.gwtmaterialdesign.client.application.navbartabspush.TabPushNav
 import com.github.gwtmaterialdesign.client.application.navbartall.TallNavBarModule;
 import com.github.gwtmaterialdesign.client.application.sidenavcard.CardSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavcollapsible.CollapsibleSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavcontent.SideNavContentModule;
 import com.github.gwtmaterialdesign.client.application.sidenavdrawer.DrawerSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavdrawerheader.DrawerHeaderSideNavModule;
 import com.github.gwtmaterialdesign.client.application.sidenavedge.EdgeSideNavModule;
@@ -63,6 +64,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new EdgeSideNavModule());
         install(new MultipleSideNavModule());
         install(new CollapsibleSideNavModule());
+        install(new SideNavContentModule());
         install(new ShrinkNavBarModule());
         install(new DefaultNavBarModule());
         install(new FixedNavBarModule());
