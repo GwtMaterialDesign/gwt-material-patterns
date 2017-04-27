@@ -62,23 +62,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNavPush addStyleNames="gplus" m:id="sidenavGplus" width="250" withHeader="true" top="113">
-            <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Profile" iconType="ACCOUNT_CIRCLE" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="People" iconType="PEOPLE" textColor="GREY_DARKEN_2" separator="true"/>
-            <m:MaterialLink text="Settings" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Send Feedback" iconType="ANNOUNCEMENT" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Help" iconType="HELP" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Profile" iconType="ACCOUNT_CIRCLE" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="People" iconType="PEOPLE" textColor="GREY_DARKEN_2" separator="true"/>
-            <m:MaterialLink text="Settings" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Send Feedback" iconType="ANNOUNCEMENT" textColor="GREY_DARKEN_2"/>
-            <m:MaterialLink text="Help" iconType="HELP" textColor="GREY_DARKEN_2"/>
+        <m:MaterialSideNavPush m:id="sidenavGplus" width="250" withHeader="true" top="113">
             <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>
