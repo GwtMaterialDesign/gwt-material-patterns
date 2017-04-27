@@ -37,5 +37,15 @@
     <inherits name="gwt.material.design.themes.ThemeBlue"/>
     <inherits name="gwt.material.design.addins.GwtMaterialAddinsDebug"/>
 
+    <set-property name="compiler.stackMode" value="emulated" />
+    <set-property name="compiler.emulatedStack" value="true"/>
+    <set-property name="compiler.useSourceMaps" value="true" />
+
+    <set-configuration-property name="compiler.emulatedStack.recordLineNumbers" value="true"/>
+    <set-configuration-property name="compiler.emulatedStack.recordFileNames" value="true"/>
+    <set-configuration-property name="compiler.enum.obfuscate.names" value="false" />
+
+    <set-configuration-property name="CssResource.style" value="pretty"/>
+
     <set-configuration-property name="CssResource.enableGss" value="true"/>
 </module>

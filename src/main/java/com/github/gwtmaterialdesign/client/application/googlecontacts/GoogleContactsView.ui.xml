@@ -62,7 +62,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialSideNavCard m:id="sidenavContacts" width="250" allowBodyScroll="true" layoutPosition="FIXED">
+        <m:MaterialSideNavCard m:id="sidenavContacts" width="250" allowBodyScroll="true">
             <m:MaterialRow separator="true" marginBottom="0">
                 <m:MaterialImage marginTop="20" height="auto" url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" grid="l3 m3 s3" circle="true"/>
                 <m:MaterialLabel text="Mark Kevin Baldemor" fontWeight="BOLD"  marginTop="8" grid="l9 m9 s9"/>

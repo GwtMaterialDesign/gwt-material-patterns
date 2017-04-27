@@ -23,15 +23,12 @@
 
     <ui:with field="res" type="com.github.gwtmaterialdesign.client.resources.AppResources"/>
     <ui:style>
-        @external sideNavGplus, side-nav, active;
+        @external side-nav, active;
         .side-nav li.active a{
             color: #2196f3 !important;
         }
         .side-nav li.active{
             background: #fff !important;
-        }
-        .sideNavGplus {
-            height: calc(100vh - 113px) !important;
         }
     </ui:style>
     <m:MaterialPanel>
@@ -55,7 +52,7 @@
             <!-- Tab -->
             <m:MaterialRow backgroundColor="LIGHT_BLUE" marginBottom="0">
                 <m:MaterialColumn offset="l3 m0 s0" grid="l6 m12 s12" backgroundColor="LIGHT_BLUE">
-                    <m:MaterialTab backgroundColor="LIGHT_BLUE">
+                    <m:MaterialTab ui:field="tab" backgroundColor="LIGHT_BLUE">
                         <m:MaterialTabItem><m:MaterialLink text="FEATURED" textColor="WHITE" waves="DEFAULT"/></m:MaterialTabItem>
                         <m:MaterialTabItem><m:MaterialLink text="FOLLOWING" textColor="WHITE" waves="DEFAULT"/></m:MaterialTabItem>
                         <m:MaterialTabItem><m:MaterialLink text="YOURS" textColor="WHITE" waves="DEFAULT" /></m:MaterialTabItem>
@@ -65,7 +62,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav -->
-        <m:MaterialSideNavPush m:id="sidenavGplus" addStyleNames="sideNavGplus" width="250" withHeader="true" top="113">
+        <m:MaterialSideNavPush addStyleNames="gplus" m:id="sidenavGplus" width="250" withHeader="true" top="113">
             <m:MaterialLink text="Home" iconType="HOME" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Collections" iconType="COLLECTIONS" textColor="GREY_DARKEN_2"/>
             <m:MaterialLink text="Communities" iconType="GROUP_WORK" textColor="GREY_DARKEN_2"/>

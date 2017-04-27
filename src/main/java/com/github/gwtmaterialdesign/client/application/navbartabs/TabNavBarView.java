@@ -47,10 +47,10 @@ public class TabNavBarView extends ViewImpl implements TabNavBarPresenter.MyView
     TabNavBarView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
         sidenav.addOpenedHandler(event -> {
-            tab.resize();
+            tab.reinitialize();
         });
         sidenav.addClosedHandler(event -> {
-            tab.resize();
+            tab.reinitialize();
         });
     }
 }

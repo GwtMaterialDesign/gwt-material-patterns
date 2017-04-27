@@ -46,10 +46,10 @@ public class TabPushNavBarView extends ViewImpl implements TabPushNavBarPresente
     TabPushNavBarView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
         sidenav.addOpenedHandler(event -> {
-            tab.resize();
+            tab.reinitialize();
         });
         sidenav.addClosedHandler(event -> {
-            tab.resize();
+            tab.reinitialize();
         });
     }
 }

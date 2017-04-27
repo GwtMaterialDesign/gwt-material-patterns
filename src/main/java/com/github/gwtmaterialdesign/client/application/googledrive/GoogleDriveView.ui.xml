@@ -91,10 +91,10 @@
             <m:MaterialLink iconType="DELETE" text="Trash"/>
 
             <!-- Some components -->
-            <m:MaterialPanel textAlign="CENTER">
-                <m:MaterialLabel text="Copyright @ Drive 2016" textColor="GREY_DARKEN_1"/>
+            <m:MaterialSideNavContent textAlign="CENTER" padding="20">
+                <m:MaterialLabel text="Copyright @ Drive 2016" marginBottom="40" textColor="GREY_DARKEN_1"/>
                 <m:MaterialButton text="Get Drive for PC" backgroundColor="GREY_DARKEN_1" textColor="WHITE"/>
-            </m:MaterialPanel>
+            </m:MaterialSideNavContent>
 
         </m:MaterialSideNavPush>
 
