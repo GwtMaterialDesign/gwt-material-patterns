@@ -20,7 +20,7 @@
         <gwtp.version>1.5.3</gwtp.version>
         <gin.version>2.1.2</gin.version>
         <gwt-material.version>2.0-SNAPSHOT</gwt-material.version>
-        <gwt.style>DETAILED</gwt.style>
+        <gwt.style>OBF</gwt.style>
 
         <!-- maven -->
         <maven-war-plugin.version>2.6</maven-war-plugin.version>
