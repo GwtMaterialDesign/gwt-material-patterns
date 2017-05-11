@@ -1,0 +1,62 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+>
+    <ui:style gss="true">
+        body {
+            background: #e9e9e9;
+        }
+    </ui:style>
+    <m:MaterialPanel>
+        <m:MaterialHeader ui:field="header">
+            <m:MaterialNavBar ui:field="navBar" activates="sidenavEdge" backgroundColor="BLUE" shadow="1">
+                <m:MaterialNavBrand paddingLeft="60" text="gwt-material" />
+            </m:MaterialNavBar>
+        </m:MaterialHeader>
+
+        <m:MaterialSideNavCard m:id="sidenavEdge" ui:field="sideNav" width="300" edge="RIGHT">
+            <ma:sideprofile.MaterialSideProfile url="http://static1.squarespace.com/static/51609147e4b0715db61d32b6/521b97cee4b05f031fd12dde/5519e33de4b06a1002802805/1431718693701/?format=1500w">
+                <m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" />
+                <m:MaterialLabel text="GWT Material" textColor="WHITE"/>
+                <m:MaterialLink text="gwt-material@gmail.com" activates="dropProfile" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE"/>
+            </ma:sideprofile.MaterialSideProfile>
+            <m:MaterialLink iconType="INBOX" text="Inbox">
+                <m:MaterialBadge text="1 new" />
+            </m:MaterialLink>
+            <m:MaterialLink iconType="SEND" text="Send Mail"/>
+            <m:MaterialLink iconType="DRAFTS" text="Drafts"/>
+            <m:MaterialLink iconType="MAIL" text="All Mail"/>
+            <m:MaterialLink iconType="DELETE" text="Trash"/>
+            <m:MaterialLink iconType="INFO_OUTLINE" text="Spam"/>
+        </m:MaterialSideNavCard>
+
+        <m:MaterialContainer>
+            <m:MaterialRow textAlign="CENTER" paddingTop="40">
+                <m:MaterialImage url="http://i.imgur.com/7JpG0F4.gif" />
+                <m:MaterialFAB ui:field="fab">
+                    <m:MaterialButton type="FLOATING" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/blob/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/sidenavcard/CardSideNavView.ui.xml" target="_blank" backgroundColor="PINK" size="LARGE" iconType="CODE" />
+                </m:MaterialFAB>
+            </m:MaterialRow>
+        </m:MaterialContainer>
+    </m:MaterialPanel>
+</ui:UiBinder>

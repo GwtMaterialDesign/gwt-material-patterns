@@ -25,6 +25,25 @@ import com.github.gwtmaterialdesign.client.application.googlecontacts.GoogleCont
 import com.github.gwtmaterialdesign.client.application.googledrive.GoogleDriveModule;
 import com.github.gwtmaterialdesign.client.application.googleinbox.GoogleInboxModule;
 import com.github.gwtmaterialdesign.client.application.googleplus.GooglePlusModule;
+import com.github.gwtmaterialdesign.client.application.navbardefault.DefaultNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbarextend.ExtendNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbarfixed.FixedNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbarshrink.ShrinkNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbartabs.TabNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbartabspush.TabPushNavBarModule;
+import com.github.gwtmaterialdesign.client.application.navbartall.TallNavBarModule;
+import com.github.gwtmaterialdesign.client.application.sidenavcard.CardSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavcollapsible.CollapsibleSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavcontent.SideNavContentModule;
+import com.github.gwtmaterialdesign.client.application.sidenavdrawer.DrawerSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavdrawerheader.DrawerHeaderSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavedge.EdgeSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavfixed.FixedSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavmini.MiniSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavminiexpand.MiniExpandSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavmultiple.MultipleSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavpush.PushSideNavModule;
+import com.github.gwtmaterialdesign.client.application.sidenavpushheader.PushHeaderSideNavModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
@@ -34,6 +53,25 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new GoogleContactsModule());
         install(new GooglePlusModule());
         install(new GoogleInboxModule());
+        install(new FixedSideNavModule());
+        install(new DrawerSideNavModule());
+        install(new DrawerHeaderSideNavModule());
+        install(new PushSideNavModule());
+        install(new PushHeaderSideNavModule());
+        install(new MiniSideNavModule());
+        install(new MiniExpandSideNavModule());
+        install(new CardSideNavModule());
+        install(new EdgeSideNavModule());
+        install(new MultipleSideNavModule());
+        install(new CollapsibleSideNavModule());
+        install(new SideNavContentModule());
+        install(new ShrinkNavBarModule());
+        install(new DefaultNavBarModule());
+        install(new FixedNavBarModule());
+        install(new TallNavBarModule());
+        install(new TabNavBarModule());
+        install(new ExtendNavBarModule());
+        install(new TabPushNavBarModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

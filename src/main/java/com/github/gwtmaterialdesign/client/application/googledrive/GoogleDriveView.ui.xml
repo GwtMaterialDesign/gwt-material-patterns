@@ -26,7 +26,6 @@
         @external side-nav, active;
         body{
             background-color: #e9e9e9;
-            overflow: auto !important;
         }
         .side-nav li.active{
             border-left: 4px solid #757575;
@@ -51,8 +50,8 @@
         <!-- Header Section -->
         <m:MaterialHeader depth="996" layoutPosition="FIXED" width="100%">
             <!-- NavBar Component -->
-            <m:MaterialNavBar ui:field="appNav" backgroundColor="GREY_DARKEN_1" activates="sidenav">
-                <m:MaterialNavBrand text="Drive"/>
+            <m:MaterialNavBar ui:field="appNav" backgroundColor="GREY_DARKEN_1" activates="sidenavDrive">
+                <m:MaterialNavBrand paddingLeft="60" text="Drive"/>
 
                 <m:MaterialNavSection float="RIGHT" hideOn="NONE">
                     <m:MaterialLink hideOn="HIDE_ON_SMALL_DOWN" text="Drive" iconPosition="RIGHT" marginRight="20" iconType="ARROW_DROP_DOWN" textColor="WHITE" activates="dpDrive" float="LEFT">
@@ -83,7 +82,7 @@
         </m:MaterialHeader>
 
         <!-- SideNav Component -->
-        <m:MaterialSideNav m:id="sidenav" overflow="AUTO" type="FIXED" showOnAttach="true" alwaysShowActivator="true" shadow="0" backgroundColor="GREY_LIGHTEN_3" top="70">
+        <m:MaterialSideNavPush m:id="sidenavDrive" width="250" withHeader="true">
             <m:MaterialLink iconType="FOLDER" text="My Drive"/>
             <m:MaterialLink iconType="GROUP" text="Shared with me"/>
             <m:MaterialLink iconType="CAMERA" text="Google Photos"/>
@@ -92,12 +91,12 @@
             <m:MaterialLink iconType="DELETE" text="Trash"/>
 
             <!-- Some components -->
-            <m:MaterialPanel textAlign="CENTER">
-                <m:MaterialLabel text="Copyright @ Drive 2016" textColor="GREY_DARKEN_1"/>
+            <m:MaterialSideNavContent textAlign="CENTER" padding="20">
+                <m:MaterialLabel text="Copyright @ Drive 2016" marginBottom="40" textColor="GREY_DARKEN_1"/>
                 <m:MaterialButton text="Get Drive for PC" backgroundColor="GREY_DARKEN_1" textColor="WHITE"/>
-            </m:MaterialPanel>
+            </m:MaterialSideNavContent>
 
-        </m:MaterialSideNav>
+        </m:MaterialSideNavPush>
 
         <m:MaterialRow ui:field="rightPanel" overflow="AUTO" grid="l3 m3 s12" depth="995" padding="0" backgroundColor="WHITE" height="100%" layoutPosition="FIXED" top="56" right="-374" addStyleNames="{style.bordered} {style.animation}">
             <!-- Header Info -->

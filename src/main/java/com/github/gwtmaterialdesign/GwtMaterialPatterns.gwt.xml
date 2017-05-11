@@ -33,7 +33,7 @@
     <source path='shared'/>
 
     <!--GWT Material-->
-    <inherits name="gwt.material.design.GwtMaterialBasicWithJQueryDebug"/>
+    <inherits name="gwt.material.design.GwtMaterialWithJQueryDebug"/>
     <inherits name="gwt.material.design.themes.ThemeBlue"/>
     <inherits name="gwt.material.design.addins.GwtMaterialAddinsDebug"/>
 
