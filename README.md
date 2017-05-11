@@ -1,5 +1,8 @@
 <img src="http://i.imgur.com/vCZg1GH.png" />
-##gwt-material-patterns [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-patterns.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-patterns)
+
+## gwt-material-patterns
+[![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-patterns.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-patterns)
+
 <p>A pattern layouts to build gwt-material applications rapidly</p>
 
 ## Maven Import
@@ -8,7 +11,7 @@
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-patterns</artifactId>
-    <version>1.3</version>
+    <version>2.0-rc5</version>
 </dependency>
 
 ```
@@ -24,8 +27,10 @@ This pattern is suitable for Social  Network apps to provide a collection of pos
   <li> Chips as tags inside the post card  </li>
   <li> Collection Items for User comments </li>
 </ul>
+
 #### Desktop / Tablet View
 <img src="http://i.imgur.com/3S3Zetw.gif" />
+
 #### Mobile View
 <img src="http://i.imgur.com/pfarQGt.gif" />
 
@@ -41,8 +46,10 @@ This pattern is suitable for Contact / User List apps to provide a collapsible l
   <li> Display all contacts into collapsible items </li>
   <li> Overlay component to display more info about the contact </li>
 </ul>
+
 #### Desktop / Tablet View
 <img src="http://i.imgur.com/TCQ4zot.gif" />
+
 #### Mobile View
 <img src="http://i.imgur.com/SxhMv92.gif" />
 
@@ -60,8 +67,10 @@ This pattern is suitable for Document Management Systems.
   <li> Chips as file tags </li>
   <li> Circular user image for those who can view the file </li>
 </ul>
+
 #### Desktop / Tablet View
 <img src="http://i.imgur.com/LkQo3Nb.gif" />
+
 #### Mobile View
 <img src="http://i.imgur.com/0MGLaYo.gif" />
 
@@ -76,8 +85,10 @@ This pattern is suitable for Email Systems.
   <li> Added Horizontal Card child into Collapsible header </li>
   <li> Added a hoverable icon panel on each item </li>
 </ul>
+
 #### Desktop / Tablet View
 <img src="http://i.imgur.com/AfK6QLK.gif" />
+
 #### Mobile View
 <img src="http://i.imgur.com/v1F2Ooy.gif" />
 
