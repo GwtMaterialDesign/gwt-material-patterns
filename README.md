@@ -53,7 +53,7 @@ This pattern is suitable for Contact / User List apps to provide a collapsible l
 #### Mobile View
 <img src="http://i.imgur.com/SxhMv92.gif" />
 
-## Pattern #2
+## Pattern #3
 ### The Google Drive v1.0 <a href="http://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot#google_drive">Demo</a>
 This pattern is suitable for Document Management Systems.
 #### Material Components
@@ -74,7 +74,7 @@ This pattern is suitable for Document Management Systems.
 #### Mobile View
 <img src="http://i.imgur.com/0MGLaYo.gif" />
 
-## Pattern #2
+## Pattern #4
 ### The Google Inbox v1.0 <a href="http://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot#google_inbox">Demo</a>
 This pattern is suitable for Email Systems.
 #### Material Components
