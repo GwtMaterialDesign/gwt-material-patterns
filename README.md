@@ -11,7 +11,7 @@
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-patterns</artifactId>
-    <version>2.0-rc5</version>
+    <version>2.0-rc6</version>
 </dependency>
 
 ```
