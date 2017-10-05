@@ -30,8 +30,6 @@ import gwt.material.design.client.ui.MaterialTab;
 
 import javax.inject.Inject;
 
-import static gwt.material.design.client.js.JsMaterialElement.$;
-
 
 public class TabNavBarView extends ViewImpl implements TabNavBarPresenter.MyView {
     interface Binder extends UiBinder<Widget, TabNavBarView> {
@@ -46,11 +44,7 @@ public class TabNavBarView extends ViewImpl implements TabNavBarPresenter.MyView
     @Inject
     TabNavBarView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        sidenav.addOpenedHandler(event -> {
-            tab.reinitialize();
-        });
-        sidenav.addClosedHandler(event -> {
-            tab.reinitialize();
-        });
+        sidenav.addOpenedHandler(event -> tab.reload());
+        sidenav.addClosedHandler(event -> tab.reload());
     }
 }

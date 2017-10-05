@@ -50,7 +50,7 @@ public class GooglePlusView extends ViewImpl implements GooglePlusPresenter.MyVi
             @Override
             public void run() {
                 splash.hide();
-                tab.reinitialize();
+                tab.reload();
             }
         };
         t.schedule(5000);
