@@ -26,10 +26,12 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.base.AbstractSideNav;
 import gwt.material.design.client.base.TransitionConfig;
 import gwt.material.design.client.ui.MaterialFAB;
 import gwt.material.design.client.ui.MaterialNavBar;
 import gwt.material.design.client.ui.MaterialSideNav;
+import gwt.material.design.client.ui.MaterialSideNavCard;
 
 import javax.inject.Inject;
 
@@ -42,7 +44,7 @@ public class EdgeSideNavView extends ViewImpl implements EdgeSideNavPresenter.My
     MaterialNavBar navBar;
 
     @UiField
-    MaterialSideNav sideNav;
+    MaterialSideNavCard sideNav;
 
     @UiField
     MaterialFAB fab;
