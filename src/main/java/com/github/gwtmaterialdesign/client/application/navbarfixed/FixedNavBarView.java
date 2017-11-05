@@ -28,6 +28,7 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialFAB;
 import gwt.material.design.client.ui.MaterialNavBar;
 import gwt.material.design.client.ui.MaterialSideNav;
+import gwt.material.design.client.ui.MaterialSideNavDrawer;
 
 import javax.inject.Inject;
 
@@ -43,7 +44,7 @@ public class FixedNavBarView extends ViewImpl implements FixedNavBarPresenter.My
     MaterialFAB fab;
 
     @UiField
-    MaterialSideNav sideNav;
+    MaterialSideNavDrawer sideNav;
 
     @Inject
     FixedNavBarView(Binder uiBinder) {

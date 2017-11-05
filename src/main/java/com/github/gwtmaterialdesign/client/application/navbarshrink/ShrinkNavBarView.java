@@ -45,7 +45,7 @@ public class ShrinkNavBarView extends ViewImpl implements ShrinkNavBarPresenter.
     MaterialFAB fab;
 
     @UiField
-    MaterialSideNav sideNav;
+    MaterialSideNavPush sideNav;
 
     @Inject
     ShrinkNavBarView(Binder uiBinder) {

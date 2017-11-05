@@ -27,7 +27,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialFAB;
 import gwt.material.design.client.ui.MaterialNavBar;
-import gwt.material.design.client.ui.MaterialSideNav;
+import gwt.material.design.client.ui.MaterialSideNavDrawer;
 
 import javax.inject.Inject;
 
@@ -43,7 +43,7 @@ public class TallNavBarView extends ViewImpl implements TallNavBarPresenter.MyVi
     MaterialFAB fab;
 
     @UiField
-    MaterialSideNav sideNav;
+    MaterialSideNavDrawer sideNav;
 
     @Inject
     TallNavBarView(Binder uiBinder) {
