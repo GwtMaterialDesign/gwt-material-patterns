@@ -4,22 +4,22 @@
     <parent>
         <artifactId>gwt-material-parent</artifactId>
         <groupId>com.github.gwtmaterialdesign</groupId>
-        <version>2.0-SNAPSHOT</version>
+        <version>2.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gwt-material-patterns</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>2.0</version>
 
     <packaging>war</packaging>
     <name>GMD Patterns</name>
 
     <properties>
         <!-- client -->
-        <gwt.version>2.8.1</gwt.version>
-        <gwtp.version>1.5.3</gwtp.version>
+        <gwt.version>2.8.2</gwt.version>
+        <gwtp.version>1.6</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>2.0-SNAPSHOT</gwt-material.version>
+        <gwt-material.version>2.0</gwt-material.version>
         <gwt.style>OBF</gwt.style>
 
         <!-- maven -->
@@ -55,21 +55,8 @@
 
             <!-- GWT -->
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
+                <groupId>net.ltgt.gwt.maven</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${gwt.version}</version>
-                <configuration>
-                    <strict>true</strict>
-
-                    <testTimeOut>180</testTimeOut>
-                    <mode>htmlunit</mode>
-                    <includes>**/*GwtTest.java</includes>
-
-                    <logLevel>INFO</logLevel>
-
-                    <runTarget>index.html</runTarget>
-                    <module>com.github.gwtmaterialdesign.GwtMaterialPatterns</module>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -78,6 +65,22 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <skipModule>true</skipModule>
+                    <moduleName>com.github.gwtmaterialdesign.GwtMaterialPatterns</moduleName>
+                    <failOnError>true</failOnError>
+                    <sourceLevel>1.8</sourceLevel>
+                    <compilerArgs>
+                        <arg>-compileReport</arg>
+                        <arg>-XcompilerMetrics</arg>
+                    </compilerArgs>
+                    <launcherDir>${webappDirectory}</launcherDir>
+                    <warDir>${webappDirectory}</warDir>
+                    <classpathScope>compile+runtime</classpathScope>
+                    <startupUrls>
+                        <startupUrl>index.html</startupUrl>
+                    </startupUrls>
+                </configuration>
             </plugin>
         </plugins>
     </build>

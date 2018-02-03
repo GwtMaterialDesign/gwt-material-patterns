@@ -21,12 +21,12 @@ package com.github.gwtmaterialdesign.client.application.navbartabspush;
  */
 
 
-import com.github.gwtmaterialdesign.client.application.navbartabs.TabNavBarPresenter;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialSideNav;
+import gwt.material.design.client.ui.MaterialSideNavPush;
 import gwt.material.design.client.ui.MaterialTab;
 
 import javax.inject.Inject;
@@ -37,7 +37,7 @@ public class TabPushNavBarView extends ViewImpl implements TabPushNavBarPresente
     }
 
     @UiField
-    MaterialSideNav sidenav;
+    MaterialSideNavPush sidenav;
 
     @UiField
     MaterialTab tab;
@@ -45,11 +45,7 @@ public class TabPushNavBarView extends ViewImpl implements TabPushNavBarPresente
     @Inject
     TabPushNavBarView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        sidenav.addOpenedHandler(event -> {
-            tab.reinitialize();
-        });
-        sidenav.addClosedHandler(event -> {
-            tab.reinitialize();
-        });
+        sidenav.addOpenedHandler(event -> tab.reload());
+        sidenav.addClosedHandler(event -> tab.reload());
     }
 }
